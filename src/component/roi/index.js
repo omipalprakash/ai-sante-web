@@ -9,7 +9,7 @@ import Header_text from '../header_text';
 const Roi = () => {
   return (
     <section className={`${styles.roi_section} bg-[#F5F5F5]`}>
-      <div className="max-w-[1404px] mx-auto px-8">
+      <div className="max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8">
         <div className={styles.roi_wrap}>
           <div className={styles.roi_grid}>
             <motion.div
@@ -36,7 +36,7 @@ const Roi = () => {
                   <Image
                     src={icons.shareImg}
                     width={16} height={16}
-                    alt="shareImage"
+                    alt="Arrow"
                     className={styles.image_url}
                   />
                 </Link>

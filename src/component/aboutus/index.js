@@ -5,14 +5,14 @@ import { images } from './constants';
 const Aboutus = () => {
   return (
     <section className={`${styles.content_wrapper} bg-[#F5F5F5] `} aria-label="About Us">
-      <div className="max-w-[1404px] mx-auto px-8">
+      <div className="max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8">
         <div className={styles.content_box}>
           {/* Left Images */}
           <div className={`${styles.image_column}  mb-16 md:mb-0`}>
             <div className={`${styles.image_container} ${styles.image_container_1}`}>
               <Image
                 src={images[0]}
-                alt="About us image 1"
+                alt="Team collaborating around a laptop in a modern office"
                 fill
                 sizes="(max-width: 768px) 100vw, 150px"
                 className={styles.vintage_image}
@@ -22,7 +22,7 @@ const Aboutus = () => {
             <div className={`${styles.image_container} ${styles.image_container_2}`}>
               <Image
                 src={images[1]}
-                alt="About us image 2"
+                alt="Business meeting with team members seated around a conference table"
                 fill
                 sizes="(max-width: 768px) 100vw, 150px"
                 className={styles.vintage_image}
@@ -43,7 +43,7 @@ const Aboutus = () => {
             <div className={`${styles.image_container} ${styles.image_container_3}`}>
               <Image
                 src={images[2]}
-                alt="About us image 3"
+                alt="Group discussion with team members reviewing documents in an office"
                 fill
                 sizes="(max-width: 768px) 100vw, 150px"
                 className={styles.vintage_image}
@@ -52,7 +52,7 @@ const Aboutus = () => {
             <div className={`${styles.image_container} ${styles.image_container_4}`}>
               <Image
                 src={images[3]}
-                alt="About us image 4"
+                alt="Manager mentoring two colleagues over a report in a workplace setting"
                 fill
                 sizes="(max-width: 768px) 100vw, 150px"
                 className={styles.vintage_image}

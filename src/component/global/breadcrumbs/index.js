@@ -36,7 +36,7 @@ const Breadcrumbs = () => {
   const isBlogPage = pathname.startsWith('/blogs');
 
   return (
-    <div className='max-w-[1404px] mx-auto px-8'>
+    <div className='max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8'>
       <nav className={`flex items-center gap-2.5 ${isBlogPage ? '' : 'mt-4 md:mt-5 lg:mt-10'}`}>
         <Link href="/" className="inline-flex items-center space-x-1 hover:text-black">
           <Image src={icons.homeicon} alt="home_Icon" width={20} height={20} />

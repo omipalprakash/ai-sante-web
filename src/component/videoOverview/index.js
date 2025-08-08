@@ -6,10 +6,10 @@ import styles from './videooverview.module.css';
 import { icons } from '@/utility/image';
 // const InfoCard = ({ HeaderText = '', content1 = '', content2 = '' }) => {
 
-const VideoOverview = ({title = 'Lorem ipsum dolor sit amet', video1 = ''}) => {
+const VideoOverview = ({ title = 'Lorem ipsum dolor sit amet', video1 = '' }) => {
   return (
     <section className="relative overflow-hidden my-[30px] md:my-[23px] lg:my-[49px]">
-      <div className='max-w-[1404px] mx-auto px-8'>
+      <div className='max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8'>
         <div className={`flex flex-col items-center justify-between md:flex-row relative gap-[15px] md:gap-[20px] lg:gap-[24px]`}>
           <div className="max-w-full md:block lg:block md:max-w-1/2 lg:max-w-[544px]">
             <p className="section-topTitle mb-[13px] md:mb-[15px] lg:mb-[19px]">Video Overview</p>

@@ -5,6 +5,7 @@ import Footer from '../footer';
 import Breadcrumbs from '../global/breadcrumbs';
 import ClickSpark from '../clickEffect';
 import { usePathname } from 'next/navigation';
+import BackToTop from '../back-to-top';
 
 const Layout = ({ children }) => {
   useAos();
@@ -50,7 +51,8 @@ const Layout = ({ children }) => {
           <Footer />
         </footer>
 
-
+        {/* Add BackToTop here so it appears on every page */}
+        <BackToTop />
       </ClickSpark>
     </div>
   );

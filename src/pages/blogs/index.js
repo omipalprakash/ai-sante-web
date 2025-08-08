@@ -1,3 +1,4 @@
+import Meta from '@/component/layout/meta';
 import React from 'react';
 import BlogDetail from './subComponents/blogDetails';
 import Recent_Recommend from '@/component/global/recent_recommend';
@@ -8,6 +9,11 @@ import BackgroundBoxAnimation from '@/component/global/backgroundBoxAnimation/ba
 const index = () => {
   return (
     <>
+      <Meta
+        title="Blogs | Ai Sante"
+        description="Read the latest insights, trends, and strategies transforming the pharmaceutical industry. Explore how AI is revolutionizing pharma marketing, CRM, and stockist operations."
+        keywords="AI in pharma, pharma CRM, pharma sales trends, AI healthcare, pharma stockist solutions, pharmaceutical marketing, AI Sante blogs"
+      />
       {/* <BackgroundBoxAnimation> */}
       <BlogDetail
         title={BLOGDETAIL_SECTION_DATA.title}

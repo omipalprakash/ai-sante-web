@@ -16,7 +16,7 @@ const roles = [
 export default function OpenRoles() {
   return (
     <section className="bg-white py-[40px] md:py-[60px] lg:py-[90px]">
-      <div className="flex flex-col lg:flex-row justify-between items-start  max-w-[1404px] mx-auto px-8">
+      <div className="flex flex-col lg:flex-row justify-between items-start  max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8">
         {/* Left Section */}
         <div className="mb-10 lg:mb-0 max-w-lg">
           <h2 className="font-[Erstoria] text-[#C37A20] mb-[18px] md:mb-[40px] lg:mb-[25px]  lg:text-left">

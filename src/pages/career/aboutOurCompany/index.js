@@ -3,7 +3,7 @@ import styles from './aboutourcompany.module.css';
 export default function AboutOurCompany() {
   return (
     <section className=" bg-white mt-[39px] md:mt-[73px] lg:mt-[117px]">
-      <div className="max-w-[1170px] mx-auto p-8">
+      <div className="max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8">
         <h2 className="about-carrer font-[Erstoria]  text-[#C37A20] text-center text-[20px] md:text-[38px] lg:text-[52px] mb-[20px] md:mb-[24px] lg:mb-8 uppercase">
           A Little More to Know About Us Before you Apply
         </h2>

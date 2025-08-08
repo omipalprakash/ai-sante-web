@@ -4,6 +4,7 @@ export const BLOGDETAIL_SECTION_DATA = {
   title: 'Our Latest Insights',
   name: 'Phonex Baker',
   image: icons.blogimage3,
+  alt: 'A character walking near village houses and forest in Ghibli style',
   date: '19 Jan 2024',
   tagArray: ['Design', 'Research'],
   blogArray: [

@@ -1,3 +1,4 @@
+import Meta from '@/component/layout/meta';
 import InfoCard from '@/component/infoCard';
 import styles from './goalBot.module.css';
 import SubtleImageTab from '@/component/subtleImagetab';
@@ -11,6 +12,11 @@ import { content, features, HeaderText, secondaryContent, video } from '@/lib/go
 export default function GoalBot() {
   return (
     <>
+      <Meta
+        title="Goal Bot – Personalized Sales Planning with AI | Ai Sante"
+        description="Achieve your pharma sales goals with Ai Sante’s Goal Bot. Get a personalized roadmap, identify performance gaps, and monitor progress in real time."
+        keywords="Goal Bot, AI sales planning, pharma sales goals, sales roadmap, Ai Sante, growth strategy, performance tracking"
+      />
       <InfoCard
         HeaderText={HeaderText}
         content1={content}

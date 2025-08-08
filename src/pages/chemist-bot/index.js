@@ -1,3 +1,4 @@
+import Meta from '@/component/layout/meta';
 import InfoCard from '@/component/infoCard';
 import styles from './chemist-bot.module.css';
 import SubtleImageTab from '@/component/subtleImagetab';
@@ -17,6 +18,11 @@ import {
 export default function ChemistBot() {
   return (
     <>
+      <Meta
+        title="Chemist Bot | Ai Sante"
+        description="Automate secondary sales data tracking and get real-time stockist insights with Chemist Bot."
+        keywords="chemist bot, secondary sales automation, AI pharma sales, stockist data automation"
+      />
       <InfoCard
         HeaderText={HeaderText}
         content1={content}

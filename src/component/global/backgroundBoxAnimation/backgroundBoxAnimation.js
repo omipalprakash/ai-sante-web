@@ -6,7 +6,7 @@ const BackgroundBoxAnimation = ({ children, boxColor = '#f5f5f5' }) => {
 
   return (
     <section className={styles.storySection}>
-      <div className='max-w-[1404px] mx-auto px-8'>
+      <div className='max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8'>
         <ul className={styles.circles}>
           {data.map((_, index) => (
             <li key={index} style={{ backgroundColor: boxColor }}></li>

@@ -12,7 +12,7 @@ export default function Recent_Recommend({ data = [], title = '' }) {
   return (
 
     <section className="bg-[#F5F5F5] py-[20px] md:py-[40px] lg:pt-[40px] lg:pb-[60px]">
-      <div className='max-w-[1404px] mx-auto px-8'>
+      <div className='max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8'>
         <h2
           className="page-title font-['Erstoria',_sans-serif] text-[#2A5286] uppercase text-center mb-[30px] md:mb-[20px] lg:mb-[40px]"
 

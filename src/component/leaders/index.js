@@ -64,12 +64,38 @@ const Leaders = () => {
     const [hoveredSlider, setHoveredSlider] = useState(null)
 
     const sliderData = [
-        [icons.ghibliOne, icons.ghibliTwo, icons.ghibliThree, icons.ghibliFour],
-        [icons.ghibliFive, icons.ghibliSix, icons.ghibliSeven, icons.ghibliThree],
-        [icons.ghibliOne, icons.ghibliTwo, icons.ghibliThree, icons.ghibliFour],
-        [icons.ghibliFive, icons.ghibliSix, icons.ghibliSeven, icons.ghibliThree],
-        [icons.ghibliOne, icons.ghibliTwo, icons.ghibliThree, icons.ghibliFour],
-    ]
+        [
+            { src: icons.ghibliOne, alt: 'Smiling man in tropical shirt' },
+            { src: icons.ghibliTwo, alt: 'Focused businessman with document' },
+            { src: icons.ghibliThree, alt: 'Happy man in office' },
+            { src: icons.ghibliFour, alt: 'Woman in lab with beaker' }
+        ],
+        [
+            { src: icons.ghibliFive, alt: 'Young man in field' },
+            { src: icons.ghibliSix, alt: 'Elderly man giving thumbs up' },
+            { src: icons.ghibliSeven, alt: 'Placeholder image' },
+            { src: icons.ghibliThree, alt: 'Happy man in office' }
+        ],
+        [
+            { src: icons.ghibliOne, alt: 'Smiling man in tropical shirt' },
+            { src: icons.ghibliTwo, alt: 'Focused businessman with document' },
+            { src: icons.ghibliThree, alt: 'Happy man in office' },
+            { src: icons.ghibliFour, alt: 'Woman in lab with beaker' }
+        ],
+        [
+            { src: icons.ghibliFive, alt: 'Young man in field' },
+            { src: icons.ghibliSix, alt: 'Elderly man giving thumbs up' },
+            { src: icons.ghibliSeven, alt: 'Young boy in doorway' },
+            { src: icons.ghibliThree, alt: 'Happy man in office' }
+        ],
+        [
+            { src: icons.ghibliOne, alt: 'Smiling man in tropical shirt' },
+            { src: icons.ghibliTwo, alt: 'Focused businessman with document' },
+            { src: icons.ghibliThree, alt: 'Happy man in office' },
+            { src: icons.ghibliFour, alt: 'Woman in lab with beaker' }
+        ]
+    ];
+
 
     const duplicatedData = sliderData.map((images) => [...images, ...images, ...images])
 
@@ -100,7 +126,7 @@ const Leaders = () => {
 
     return (
         <section className={styles.leadersSection}>
-            <div className="max-w-[1404px] mx-auto px-8">
+            <div className="max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8">
 
                 {/* Desktop and Tablet Slider Grid */}
                 <div className={styles.desktopOnly}>

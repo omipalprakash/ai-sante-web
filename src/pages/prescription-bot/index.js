@@ -1,3 +1,4 @@
+import Meta from '@/component/layout/meta';
 import InfoCard from '@/component/infoCard';
 import VideoOverview from '@/component/videoOverview';
 import SubtleImageTab from '@/component/subtleImagetab';
@@ -10,6 +11,11 @@ import { content, features, HeaderText, secondaryContent, video } from '@/lib/pr
 export default function PrescriptionBot() {
   return (
     <>
+      <Meta
+        title="Prescription Bot – AI-Powered Doctor Engagement | Ai Sante"
+        description="Transform doctor meetings into strategic sales opportunities with Ai Sante’s Prescription Bot. Get real-time pitches, tailored product suggestions, and accelerate your sales cycle."
+        keywords="Prescription Bot, AI medical sales, doctor pitch automation, pharma sales AI, real-time doctor suggestions, Ai Sante"
+      />
       <InfoCard
         HeaderText={HeaderText}
         content1={content}

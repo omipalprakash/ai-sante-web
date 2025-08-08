@@ -5,7 +5,7 @@ import { icons } from '@/utility/image';
 export default function ChannelPartnerSection() {
   return (
     <section className="bg-white pt-[14px] pb-[24px] md:pt-0 md:pb-[87px] lg:pt-[10px] lg:pb-[100px]">
-      <div className="max-w-[1404px] mx-auto px-8">
+      <div className="max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8">
         <div className="w-full flex flex-col-reverse md:flex-row items-center gap-12">
           {/* Left: Text Content */}
           <div className="flex-1">

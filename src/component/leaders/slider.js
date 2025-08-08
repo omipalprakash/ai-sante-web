@@ -32,8 +32,8 @@ const Slider = ({
                         }}
                     >
                         <Image
-                            src={icon || "/placeholder.svg"}
-                            alt={`slide-${sliderIndex}-${index}`}
+                            src={icon?.src || "/placeholder.svg"}
+                            alt={icon?.alt}
                             width={241}
                             height={291}
                             className="object-cover w-full h-full"

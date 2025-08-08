@@ -38,7 +38,7 @@ export default function ContactForm() {
 
   return (
     <section className='contactSection bg-[#FFFFFF] relative'>
-      <div className='max-w-[1404px] mx-auto px-8'>
+      <div className='max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8'>
         <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-full gap-10 lg:gap-5">
           {/* Image Section */}
           <div className="w-full md:w-1/2 ">

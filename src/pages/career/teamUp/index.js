@@ -11,7 +11,7 @@ export default function TeamUp() {
         background: 'linear-gradient(180deg, #FFFFFF 4.45%, #FFF4E6 98.34%)',
       }}
     >
-      <div className="max-w-[1404px] mx-auto px-8">
+      <div className="max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8">
         <h2 className=" text-[#C37A20] font-[Erstoria] text-center mb-[20px] md:mb-[40px] lg:mb-[51px]">
           Team Up With <br /> Your Future Crew
         </h2>
@@ -24,7 +24,7 @@ export default function TeamUp() {
             >
               <Image
                 src={card.icon}
-                alt="icon"
+                alt={card.alt}
                 className="flex items-center justify-start text-4xl"
                 width={50} height={50}
               />

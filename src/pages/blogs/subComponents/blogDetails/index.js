@@ -3,6 +3,9 @@ import Aos from 'aos';
 import Image from 'next/image';
 import { useEffect } from 'react';
 import { icons } from '@/utility/image';
+import Link from 'next/link';
+
+
 
 export default function BlogDetail({
   title = '',
@@ -19,8 +22,9 @@ export default function BlogDetail({
   }, []);
   return (
     <section className="bg-[#F5F5F5] w-full pt-[16px] pb-[50px] md:pt-[20px] md:pb-[30px]  lg:pt-[40px] lg:pb-[50px] rounded-b-[8px] rounded-bl-[8px] overflow-hidden">
+
       <Breadcrumbs />
-      <div className="max-w-[1404px] mx-auto px-8">
+      <div className="max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8">
         {/* Main Title */}
         <h1
           className="page-title font-['Erstoria',_sans-serif] text-[#25355b] uppercase mt-[30px] mb-[10px] md:mt-[20px] md:mb-[14px] lg:mt-[35px] lg:mb-[20px]"
@@ -41,7 +45,7 @@ export default function BlogDetail({
         >
           <Image
             src={icons.blogBanner} // Replace with actual image path
-            alt="Award Background"
+            alt="A character walking near village houses and forest in Ghibli style"
             width={1340}
             height={816}
             className="object-cover blg-img"
@@ -77,7 +81,7 @@ export default function BlogDetail({
               className={marginBottomClass}
             >
               <h2 className="inner-page-title text-[#2A5286] uppercase mb-[10px] md:mb-[7px] lg:mb-[10px]">
-                {blog.title}
+                <Link href={blog.title}>{blog.title}</Link>
               </h2>
               <p className="leading-[1.5] md:leading-[1.4] lg:leading-[1.5]">
                 {blog.description}

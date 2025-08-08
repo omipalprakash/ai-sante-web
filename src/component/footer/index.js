@@ -7,7 +7,7 @@ import Link from 'next/link';
 export default function Footer() {
   return (
     <div className="bg-[#F5F5F5]  w-full py-[30px]">
-      <div className="max-w-[1404px] mx-auto px-8">
+      <div className="max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Logo and Description */}
           <div>
@@ -28,13 +28,13 @@ export default function Footer() {
               <ul className="flex gap-[14px] flex-col">
                 <li><Link href="/">Home</Link></li>
                 <li><Link href="/chemist-bot">Products</Link></li>
-                <li><Link href="#">Testimonial</Link></li>
-                <li><Link href="#">About Us</Link></li>
+                <li><Link href="/">Testimonial</Link></li>
+                <li><Link href="/">About Us</Link></li>
               </ul>
               <ul className="space-y-2">
-                <li><Link href="#">Awards</Link></li>
+                <li><Link href="/">Awards</Link></li>
                 <li><Link href="/blogs">Blogs</Link></li>
-                <li><Link href="#">Get Demo</Link></li>
+                <li><Link href="/">Get Demo</Link></li>
               </ul>
             </div>
           </div>
@@ -43,8 +43,8 @@ export default function Footer() {
           <div>
             <h5 className="text-[#000000] mb-6">HELP</h5>
             <ul className="flex gap-[14px] flex-col">
-              <li><Link href="#">Customer Support</Link></li>
-              <li><Link href="#">Terms & Conditions</Link></li>
+              <li><Link href="/">Customer Support</Link></li>
+              <li><Link href="/">Terms & Conditions</Link></li>
               <li>
                 <Link href={'/privacy-policy'}>
                   Privacy Policy

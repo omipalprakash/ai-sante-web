@@ -54,7 +54,7 @@ const SubtleImageTab = ({ features = [] }) => {
 
   return (
     <section className={`${styles.main_container} my-[31px] md:my-[25px] lg:my-[86px]`}>
-      <div className='max-w-[1404px] mx-auto px-8'>
+      <div className='max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8'>
         <div className="flex flex-col md:flex-row gap-12 md:gap-[100px] lg:gap-[161px] justify-between">
           {/* Left Section: Image */}
           <div className={`${styles.subtlecontainer} w-full md:w-1/2 lg:w-1/3`}>

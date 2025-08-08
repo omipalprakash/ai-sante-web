@@ -40,7 +40,7 @@ const HomeSection = () => {
 
   return (
     <section className={styles.banner} ref={containerRef}>
-      <div className='max-w-[1404px] mx-auto px-8'>
+      <div className='max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8'>
         <div className="flex flex-col justify-center items-center gap-10 w-full">
           <div className="flex flex-wrap md:flex-nowrap justify-center  md:justify-start items-center  gap-6 w-full">
             <h1 data-aos="fade-right" className={styles.maintext}>

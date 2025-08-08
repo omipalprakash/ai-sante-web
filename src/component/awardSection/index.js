@@ -9,7 +9,7 @@ export const AwardSection = () => {
   return (
 
     <section className={`${styles.awardSection} bg-[#F5F5F5]`}>
-      <div className='max-w-[1404px] mx-auto px-8'>
+      <div className='max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8'>
         <div className={styles.awardSection__content}>
           <div
             className="section-topTitle mb-3 md:mb-[22px] lg:mb-[31px]"

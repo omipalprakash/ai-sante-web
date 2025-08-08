@@ -50,7 +50,7 @@ const Stories = () => {
             <div className='relative w-full aspect-[547/410]'>
               <Image
                 src={STORIES_DATA[0]?.image}
-                alt="Story Image"
+                alt={STORIES_DATA[0]?.alt}
                 fill
                 className="w-full h-auto rounded-md object-cover"
               />
@@ -65,7 +65,7 @@ const Stories = () => {
               </div>
             </div>
             <h4 className="uppercase text-black">{STORIES_DATA[0]?.title}</h4>
-            <p className="leading-5 md:leading-6 lg:leading-[30px]">{STORIES_DATA[0]?.content}</p>
+            {/* <p className="leading-5 md:leading-6 lg:leading-[30px]">{STORIES_DATA[0]?.content}</p> */}
             <div className="flex flex-wrap gap-2">
               {STORIES_DATA[0]?.tags.map((tag, index) => (
                 <div
@@ -98,7 +98,7 @@ const Stories = () => {
                 <div className='relative w-full aspect-[320/195]'>
                   <Image
                     src={item.image}
-                    alt="Story"
+                    alt={item.alt}
                     fill
                     className="h-fit rounded-md object-none aspect-auto"
                   />
@@ -118,7 +118,7 @@ const Stories = () => {
                   </div>
                 </div>
                 <h4 className="uppercase text-black">{item.title}</h4>
-                <p>{item.content}</p>
+                {/* <p>{item.content}</p> */}
                 <div className="flex flex-wrap gap-2">
                   {item.tags.map((tag, idx) => (
                     <div
@@ -151,7 +151,7 @@ const Stories = () => {
               <div className="relative w-full aspect-[547/410]">
                 <Image
                   src={item.image}
-                  alt="Story Image"
+                  alt={item.alt}
                   fill
                   className="rounded-md object-cover"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 547px"
@@ -165,7 +165,7 @@ const Stories = () => {
                   <span className="text-black">{item.date}</span>
                 </div>
                 <h4 className="uppercase text-black">{item.title}</h4>
-                <p>{item.content}</p>
+                {/* <p>{item.content}</p> */}
                 <div className="flex flex-wrap gap-2">
                   {item.tags.map((tag, idx) => (
                     <div

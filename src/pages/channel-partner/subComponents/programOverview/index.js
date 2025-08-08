@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function ProgramOverview({ data = [] }) {
   return (
     <section className="bg-[#F5F5F5] py-[20px] md:py-[60px] lg:py-[100px]">
-      <div className='max-w-[1404px] mx-auto px-8'>
+      <div className='max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8'>
         <div className="flex flex-col md:flex-row gap-[30px] md:gap-[50px] lg:gap-[155px]">
           {/* Left: Illustration */}
           <div className="w-full md:w-1/2 max-w-[520px]  mb-6 md:mb-0 relative flex justify-center items-center md:justify-start md:items-start">

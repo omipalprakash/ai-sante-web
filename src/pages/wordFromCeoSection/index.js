@@ -3,7 +3,7 @@
 import { icons } from '@/utility/image';
 import Image from 'next/image';
 import styles from './wordFromCeoSection.module.css';
-import Signature from '@/component/icons/signature';
+// import Signature from '@/component/icons/signature';
 import { motion } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 
@@ -26,7 +26,7 @@ export default function WordsFromCEO() {
   return (
 
     <section className={styles.description}>
-      <div className='max-w-[1404px] mx-auto px-8'>
+      <div className='max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8'>
         <motion.div
           className={styles.description__content}
           initial={{ opacity: 0, y: 50 }}
@@ -67,7 +67,7 @@ export default function WordsFromCEO() {
               />
             </motion.div>
             <div className={`mt-[10px] lg:mt-[40px] xl:mt-[53px] border-b-2 border-black-200 max-w-sm ${styles.description__signature}`}>
-              <Signature />
+              {/* <Signature /> */}
             </div>
 
             <div className="m-0 mt-2" style={{ fontFamily: 'Poppins' }}>
