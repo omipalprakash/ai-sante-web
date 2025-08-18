@@ -1,19 +1,18 @@
 import React from 'react';
-import styles from './navbar.module.css';
 import ArrowIcon from "../../../public/images/icons/arrow.svg";
 import Image from 'next/image';
 import Link from 'next/link';
 import { resourceItems } from './constants';
 
-const ResourcesNav = () => {
-
+const ResourcesNav = ({ onLinkClick }) => {
   return (
     <div className="bg-white rounded-xl p-4 shadow">
       <div className="flex flex-col">
         {resourceItems.map((item, index) => (
           <Link 
             key={index} 
-            href={item.url || '#'}
+            href={item.url || '#'} 
+            onClick={onLinkClick}
           >
             <div 
               className="py-3 hover:bg-gray-50 transition-all duration-200 rounded-lg p-2 cursor-pointer group"

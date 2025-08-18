@@ -14,7 +14,7 @@ export default function ROIChallengeSection() {
                 <Header_text text={'Introduction'} className='font-[Salmond]' />
 
                 {/* Main Title */}
-                <h2 className="text-3xl md:text-5xl font-normal text-[#17494D] mb-8 leading-tight font-[Erstoria]">
+                <h2 className="text-3xl md:text-5xl font-normal  mt-4 text-[#17494D] mb-8 leading-tight font-[Erstoria]">
                     The ROI Challenge in Pharma
                 </h2>
 

@@ -1,9 +1,9 @@
-import Navbar from '@/component/navbar';
-import Aos from 'aos';
-import { useEffect } from 'react';
+// import Navbar from '@/component/navbar';
+// import Aos from 'aos';
+// import { useEffect } from 'react';
 import HeroComponent from './subComponent/heroComponent';
 import ExecutiveSummary from './subComponent/summaryComponent';
-import Footer from '@/component/footer';
+// import Footer from '@/component/footer';
 import ROIChallengeSection from './subComponent/introductionComponent';
 import AISanteSolutions from './subComponent/solutionComponent';
 import RoiMetricsTable from './subComponent/roiMetricsComponent';

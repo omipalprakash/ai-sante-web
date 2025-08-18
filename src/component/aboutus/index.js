@@ -39,7 +39,7 @@ const Aboutus = () => {
           </div>
 
           {/* Right Images */}
-          <div className={`${styles.image_column} ${styles.image_max} justify-end `}>
+          <div className={`${styles.image_column} ${styles.image_max}`}>
             <div className={`${styles.image_container} ${styles.image_container_3}`}>
               <Image
                 src={images[2]}

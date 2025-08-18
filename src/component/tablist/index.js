@@ -72,7 +72,7 @@ const Tablist = () => {
                   </div>
                   <div className={`flex flex-wrap justify-between gap-3 ${style.section_box}`}>
                     <h2 className={`${style.headertext} font-['Erstoria',_sans-serif] text-[#453030]`}>{features[activeTab].title}</h2>
-                    <Button url="/demo" />
+                    <Button url="/tablist" />
                   </div>
                 </div>
               )

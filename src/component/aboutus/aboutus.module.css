@@ -19,6 +19,9 @@
   flex-wrap: wrap;
   order: 2;
 }
+.image_max{
+  justify-content: flex-end;
+}
 
 .image_container {
   position: relative;

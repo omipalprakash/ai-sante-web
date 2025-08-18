@@ -102,7 +102,7 @@ const FeedbackGrid = () => {
                   {feedbackData.percentage}
                 </div>
                 <p className="square-title border-b border-black  text-black font-medium">
-                  {feedbackData.description}
+                  {/* {feedbackData.description} */}
                 </p>
                 <div className="square-title  text-black">
                   {feedbackData.name}
@@ -142,7 +142,7 @@ const FeedbackGrid = () => {
                 transition={{ duration: 0.8 }}
                 className=" z-20 text-center text[38px] text-[52px] max-w-lg font-Erstoria text-[#453030]"
               >
-                {Feedback_Header}
+                {/* {Feedback_Header} */}
               </motion.h2>
             </div>
             <div className="relative left-[0px] lg:left-[-75px] top-[0px] lg:top-[110px] w-full">
@@ -178,7 +178,7 @@ const FeedbackGrid = () => {
                   {feedbackData2.percentage}
                 </div>
                 <p className="square-title border-b border-black  text-black font-medium">
-                  {feedbackData2.description}
+                  {/* {feedbackData2.description} */}
                 </p>
                 <div className="square-title  text-black">
                   {feedbackData2.name}
@@ -321,7 +321,7 @@ const FeedbackGrid = () => {
                 transition={{ duration: 0.8 }}
                 className=" z-20 text-left text-[24px] max-w-lg font-Erstoria text-[#453030]"
               >
-                {Feedback_Header}
+                {/* {Feedback_Header} */}
               </motion.h2>
             </div>
           </div>

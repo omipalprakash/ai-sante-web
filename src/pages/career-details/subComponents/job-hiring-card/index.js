@@ -8,11 +8,11 @@ import jobData from '@/lib/career_details_jobHiring';
 
 const JobOpeningCard = () => {
   return (
-    <div className=" p-6 bg-white shadow-md  space-y-6 text-gray-800">
-      <div className="max-w-[1440px] mx-auto">
+    <div className="py-8 md:py-[50px]">
+      <div className="max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
           <h1
-            className="text-3xl font-normal text-[#89A884] text-[40px] "
+            className="text-3xl font-normal text-[#89A884] text-[24px] md:text-[38px] lg:text-[52px]"
             style={{ fontFamily: 'Erstoria' }}
           >
             {jobData.title}
@@ -54,14 +54,14 @@ const JobOpeningCard = () => {
             className="flex items-center gap-2"
             style={{ fontFamily: 'Salmond' }}
           >
-            <Image src={icons.FullTimeWorkLogo} alt="Full Time Work Icon" />
+            <Image src={icons.FullTimeWorkLogo} alt="Full Time Work Icon" width={50} height={50} />
             {jobData.type}
           </div>
           <div
             className="flex items-center gap-2"
             style={{ fontFamily: 'Salmond' }}
           >
-            <Image src={icons.ExperienceLogo} alt="Experience Icon" />
+            <Image src={icons.ExperienceLogo} alt="Experience Icon" width={50} height={50} />
             Experience: {jobData.experience}
           </div>
         </div>
@@ -73,46 +73,46 @@ const JobOpeningCard = () => {
           {jobData.intro}
         </p>
 
-        <div>
+        <div className='mb-4'>
           <h2
-            className="text-xl font-[700] mt-2 mb-2"
+            className="text-[1rem] md:text-[1.125rem] lg:text-[1.5rem] font-bold text-gray-900 mb-3 sm:mb-4"
             style={{ fontFamily: 'Salmond' }}
           >
             Key Responsibilities:
           </h2>
           <ul
-            className="list-disc list-inside space-y-1 mt-2 mb-4 font-normal text-[18px]"
+            className="space-y-2 sm:space-y-3 text-sm sm:text-base text-gray-700"
             style={{ fontFamily: 'Salmond' }}
           >
             {jobData.responsibilities.map((item, index) => (
-              <li key={index}>{item}</li>
+              <li key={index} className='flex items-start gap-2'><span class="w-2 h-2 bg-[#89A884] rounded-full mt-2 flex-shrink-0"></span>{item}</li>
             ))}
           </ul>
         </div>
 
-        <div>
+        <div className='mb-4'>
           <h2
-            className="text-xl font-[700] mt-2 mb-2"
+            className="text-[1rem] md:text-[1.125rem] lg:text-[1.5rem] font-bold text-gray-900 mb-3 sm:mb-4"
             style={{ fontFamily: 'Salmond' }}
           >
             Qualifications:
           </h2>
           <ul
-            className="list-disc list-inside space-y-1 mt-2 mb-4 font-normal text-[18px]"
+            className="space-y-2 sm:space-y-3 text-sm sm:text-base text-gray-700"
             style={{ fontFamily: 'Salmond' }}
           >
             {jobData.qualifications.map((item, index) => (
-              <li key={index}>{item}</li>
+              <li key={index} className='flex items-start gap-2'><span class="w-2 h-2 bg-[#89A884] rounded-full mt-2 flex-shrink-0"></span>{item}</li>
             ))}
           </ul>
         </div>
 
         <p
-          className="font-[700] mt-6 text-[24px] leading-[32px]"
+          className="font-[700] mt-6 text-[16px] md:text-[18px] lg:text-[24px] leading-[32px]"
           style={{ fontFamily: 'Salmond' }}
         >
           Join us at{' '}
-          <span className="font-[700] text-[24px] leading-[32px] text-[#89A884] underline">
+          <span className="font-[700] text-[16px] md:text-[18px] lg:text-[24px] leading-[32px] text-[#89A884] underline">
             {jobData.company}
           </span>
           , where creativity meets innovation, and your designs can make a

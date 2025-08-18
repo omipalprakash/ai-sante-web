@@ -20,7 +20,7 @@ const Custom404 = () => {
                     {/* Text Section */}
                     <div className="flex-1 text-center lg:text-left">
                         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-4 font-['Erstoria',_sans-serif] text-[#453030]">
-                            Oops, <br />
+                            Oops, 1213<br />
                             <span className="text-[#203250]">nothing here...</span>
                         </h1>
                         <p className="text-gray-500 text-base sm:text-lg md:text-xl mb-8 max-w-lg mx-auto lg:mx-0">

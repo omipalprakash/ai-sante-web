@@ -41,15 +41,15 @@ const Layout = ({ children }) => {
         </header>
 
         <main className='w-full'>
-          {
+          {/* {
             showBreadcrumb && (
               <Breadcrumbs />
             )
-          }
+          } */}
           {children}</main>
-        <footer>
+ 
           <Footer />
-        </footer>
+        
 
         {/* Add BackToTop here so it appears on every page */}
         <BackToTop />

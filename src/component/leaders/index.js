@@ -8,14 +8,14 @@ import styles from "./leaders.module.css"
 import { icons } from "@/utility/image"
 
 const profiles = [
-    {
-        name: "Bharat Solanki",
-        position: "Director",
-        company: "BiosLab",
-        testimonial:
-            "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s.",
-        image: "/placeholder.svg?height=80&width=80",
-    },
+    // {
+    //     name: "Bharat Solanki",
+    //     position: "Director",
+    //     company: "BiosLab",
+    //     testimonial:
+    //         "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s.",
+    //     image: "/placeholder.svg?height=80&width=80",
+    // },
     {
         name: "Sarah Chen",
         position: "CEO",

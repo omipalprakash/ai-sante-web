@@ -21,10 +21,10 @@ export default function BlogDetail({
     });
   }, []);
   return (
-    <section className="bg-[#F5F5F5] w-full pt-[16px] pb-[50px] md:pt-[20px] md:pb-[30px]  lg:pt-[40px] lg:pb-[50px] rounded-b-[8px] rounded-bl-[8px] overflow-hidden">
+    <section className="bg-[#F5F5F5] w-full rounded-b-[8px] rounded-bl-[8px] overflow-hidden">
 
       <Breadcrumbs />
-      <div className="max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8">
+      <div className="max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8 py-8">
         {/* Main Title */}
         <h1
           className="page-title font-['Erstoria',_sans-serif] text-[#25355b] uppercase mt-[30px] mb-[10px] md:mt-[20px] md:mb-[14px] lg:mt-[35px] lg:mb-[20px]"
@@ -81,7 +81,7 @@ export default function BlogDetail({
               className={marginBottomClass}
             >
               <h2 className="inner-page-title text-[#2A5286] uppercase mb-[10px] md:mb-[7px] lg:mb-[10px]">
-                <Link href={blog.title}>{blog.title}</Link>
+                <Link href={`blog/${blog.id}`}>{blog.title}</Link>
               </h2>
               <p className="leading-[1.5] md:leading-[1.4] lg:leading-[1.5]">
                 {blog.description}

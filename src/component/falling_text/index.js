@@ -1,4 +1,4 @@
-    import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect } from "react";
 import Matter from "matter-js";
 import { useUpdateStateObject } from "@/hooks/CustomHook";
 
@@ -28,7 +28,7 @@ const Falling_Text = ({
       .map((word) => {
         const isHighlighted = highlightWords.some((hw) => word.startsWith(hw));
         return `<span
-          class="inline-block mx-[2px] select-none ${isHighlighted ? "bg-cyan-50 p-1 border-2 border-gray-300 rounded-4xl font-bold" : ""
+          class="inline-block m-[4px] select-none ${isHighlighted ? "bg-cyan-50 p-1 border-2 border-gray-300 rounded-4xl font-bold" : ""
           }"
         >
           ${word}
@@ -157,7 +157,7 @@ const Falling_Text = ({
     });
 
     const mouse = Mouse.create(containerRef.current);
-    
+
     // Allow mouse to move outside the canvas
     const mouseConstraint = MouseConstraint.create(engine, {
       mouse,
@@ -218,10 +218,10 @@ const Falling_Text = ({
   };
 
   return (
-    <div style={{ background: '#FFFFFF',padding: '2rem' }}>
+    <div style={{ background: '#FFFFFF', padding: '2rem' }}>
       <div
         ref={containerRef}
-        className="relative z-[1] max-w-[1440px] h-100 cursor-pointer text-center p-10 overflow-hidden bg-[#FBFBFB]  rounded-2xl mx-auto"
+        className="relative z-[1] max-w-[1440px] h-100 cursor-pointer text-center  overflow-hidden bg-[#FBFBFB]  rounded-2xl mx-auto"
         onClick={trigger === "click" ? handleTrigger : undefined}
         onMouseOver={trigger === "hover" ? handleTrigger : undefined}
       >

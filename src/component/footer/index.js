@@ -6,7 +6,8 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <div className="bg-[#F5F5F5]  w-full py-[30px]">
+  
+    <footer className="footer bg-[#F5F5F5]  w-full py-[30px]">
       <div className="max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Logo and Description */}
@@ -33,7 +34,7 @@ export default function Footer() {
               </ul>
               <ul className="space-y-2">
                 <li><Link href="/">Awards</Link></li>
-                <li><Link href="/blogs">Blogs</Link></li>
+                <li><Link href="/blog">Blog</Link></li>
                 <li><Link href="/">Get Demo</Link></li>
               </ul>
             </div>
@@ -79,6 +80,7 @@ export default function Footer() {
           © Copyright {getCurrentYear()}, All Rights Reserved by Aisante
         </div>
       </div>
-    </div>
+    </footer>
+
   );
 }

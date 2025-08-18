@@ -76,53 +76,32 @@ textarea {
   outline: none;
 }
 
-h1,
-h2,
-h3 {
+
+
+  h1,
+  h2,
+  h3 {
   font-weight: var(--font-regular);
   line-height: 1;
   font-family: 'Erstoria', sans-serif;
 
 }
+ @layer base{
 
-/* h1 {
-  font-size: 2.625rem;
-  font-size: clamp(2.625rem, 5vw + 1rem, 9.563rem);
+  h2{
+    @apply text-[1.5rem] md:text-[2.5rem] lg:text-[3.25rem];
+  }
+  h3{
+    @apply text-[1rem] md:text-[1.25rem] lg:text-[1.5rem];
+  }
+  h4{
+    @apply text-[0.8125rem] md:text-[1.125rem] lg:text-[1.25rem];
+  }
+  h5{
+    @apply text-[0.75rem] md:text-[0.8125rem] lg:text-[1rem] tracking-[1px] font-semibold;
+  }
 
-
-} */
-h2 {
-  font-size: 1.5rem;
-  font-size: clamp(1.5rem, 5vw, 3.25rem);
-
-  /* min: 24px, max: 52px */
-}
-
-
-h3 {
-  font-size: 0.8125rem;
-  font-size: clamp(0.8125rem, 3vw, 1.5rem);
-  /* color: var(--black); */
-  /* min: 13px, max: 24px */
-}
-
-h4 {
-  font-size: 1rem;
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
-  line-height: 1.5;
-  font-weight: var(--font-medium);
-
-}
-
-h5 {
-  font-size: 0.75rem;
-  font-size: clamp(0.75rem, 2vw, 1rem);
-  /* min: 12px, max: 16px */
-  line-height: 1;
-  letter-spacing: 1px;
-  font-weight: var(--font-semi-bold);
-
-}
+ }
 
 img {
   user-select: none;
@@ -229,7 +208,10 @@ img {
   font-size: 16px;
 }
 
-
+.blog-detail {
+  line-height: 1.2;
+  text-transform: capitalize;
+}
 
 ul {
   list-style: none;

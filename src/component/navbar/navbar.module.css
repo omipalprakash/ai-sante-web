@@ -291,7 +291,7 @@
 
   .productPopup,
   .resourcesPopup {
-    width: 75vw;
+    width: 60vw;
   }
 }
 
@@ -299,6 +299,6 @@
 
   .productPopup,
   .resourcesPopup {
-    width: 80vw;
+    width: 50vw;
   }
 }

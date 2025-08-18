@@ -10,17 +10,17 @@ export const cardData = [
       {
         name: 'AI Powered Chemist Bot',
         url: '/chemist-bot',
-        description:'Automates medicine orders with precision and real-time stock sync.',
+        description: 'Automates medicine orders with precision and real-time stock sync.',
       },
       {
         name: 'AI Goal Bot',
         url: '/goal-bot',
-        description:'Drives team targets through adaptive, real-time performance nudges.',
+        description: 'Drives team targets through adaptive, real-time performance nudges.',
       },
       {
         name: 'Prescription Bot',
         url: '/prescription-bot',
-        description:'Instantly converts doctor visits into prescription growth.',
+        description: 'Instantly converts doctor visits into prescription growth.',
       },
     ],
   },
@@ -126,7 +126,7 @@ export const resourceItems = [
     title: 'Blogs',
     description:
       'More than a chatbot. Resolve 60% of support volume instantly.',
-    url: '/blogs',
+    url: '/blog',
   },
   // {
   //   title: 'Awards',

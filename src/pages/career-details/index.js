@@ -1,14 +1,15 @@
-import styles from './career-details.module.css';
+import Breadcrumbs from '@/component/global/breadcrumbs';
 import JobOpeningCard from '@/pages/career-details/subComponents/job-hiring-card';
 import JobApplicationForm from './subComponents/jobApplicationForm';
 import CareerdetailsImage from './subComponents/careerdetailsImage';
 
 export default function Careerdetails() {
   return (
-    <div className={styles.container}>
+   <section className='details'>
+    <Breadcrumbs/>
       <CareerdetailsImage />
       <JobOpeningCard />
       <JobApplicationForm />
-    </div>
+    </section>
   );
 }

@@ -9,6 +9,7 @@ import { icons } from '@/utility/image';
 const Breadcrumbs = () => {
   const pathname = usePathname();
   const [isClient, setIsClient] = useState(false);
+  console.log('pathname', pathname);
 
   useEffect(() => {
     setIsClient(true);
@@ -22,9 +23,9 @@ const Breadcrumbs = () => {
     return null;
   }
 
-  const pathSegments = pathname.split('/').filter((seg) => seg);
+  const pathSegments = pathname?.split('/')?.filter((seg) => seg);
 
-  const breadcrumbs = pathSegments.map((segment, index) => {
+  const breadcrumbs = pathSegments?.map((segment, index) => {
     const href = '/' + pathSegments.slice(0, index + 1).join('/');
     const label = decodeURIComponent(segment)
       .replace(/-/g, ' ') // replace hyphens with spaces

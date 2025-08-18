@@ -4,13 +4,11 @@ import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import styles from './navbar.module.css';
 import Image from 'next/image';
-import Button from '../button';
 import ProductNav from './productNav';
 import ResourcesNav from './resourcesNav';
 import ArrowIcon from '../../../public/images/icons/arrow.svg';
-import menu from '../../../public/images/icons/menu.svg'
+import menu from '../../../public/images/icons/menu.svg';
 import { icons } from '@/utility/image';
-import Breadcrumbs from '../global/breadcrumbs';
 
 const Navbar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -36,7 +34,6 @@ const Navbar = () => {
   // Close on outside click
   useEffect(() => {
     const handleClickOutside = (event) => {
-      // Handle Product dropdown
       if (
         productRef.current &&
         !productRef.current.contains(event.target) &&
@@ -46,7 +43,6 @@ const Navbar = () => {
         setIsProductOpen(false);
       }
 
-      // Handle Resources dropdown
       if (
         resourcesRef.current &&
         !resourcesRef.current.contains(event.target) &&
@@ -56,7 +52,6 @@ const Navbar = () => {
         setIsResourcesOpen(false);
       }
 
-      // Handle mobile dropdowns
       if (
         mobileProductRef.current &&
         !mobileProductRef.current.contains(event.target)
@@ -92,14 +87,15 @@ const Navbar = () => {
   ]);
 
   return (
-    <div className='max-w-[1404px] bg-[#F5F5F5] mx-auto px-8'>
+    <div className="max-w-[1404px] bg-[#F5F5F5] mx-auto px-8">
       <nav className={styles.navbar}>
         <div className={styles.headerlogo}>
           <Link href="/" className={styles.logo}>
             <Image
               src={icons.aiSanteLogo}
               alt="AI Sante Logo"
-              width={193} height={48}
+              width={193}
+              height={48}
               className={styles.logoImg}
             />
           </Link>
@@ -159,20 +155,11 @@ const Navbar = () => {
           <Link href="/contact" className={styles.contactLink}>
             Contact Sales
           </Link>
-          {/* <Button
-            className={styles.demoBtn}
-            url="/demo"
-            demoButton={true}
-          /> */}
           <div className={styles.menuIcon} onClick={toggleDrawer}>
             {isDrawerOpen ? (
               '✕'
             ) : (
-              <Image
-                src={menu}
-                alt="MenuIcon"
-              // className={styles.arrowIcon}
-              />
+              <Image src={menu} alt="MenuIcon" />
             )}
           </div>
         </div>
@@ -194,7 +181,12 @@ const Navbar = () => {
                 </div>
                 {isMobileProductOpen && (
                   <div className={styles.mobileProductPopup}>
-                    <ProductNav />
+                    <ProductNav
+                      onLinkClick={() => {
+                        setIsMobileProductOpen(false);
+                        closeDrawer();
+                      }}
+                    />
                   </div>
                 )}
               </li>
@@ -212,24 +204,25 @@ const Navbar = () => {
                 </div>
                 {isMobileResourcesOpen && (
                   <div className={styles.mobileProductPopup}>
-                    <ResourcesNav />
+                    <ResourcesNav
+                      onLinkClick={() => {
+                        setIsMobileResourcesOpen(false);
+                        closeDrawer();
+                      }}
+                    />
                   </div>
                 )}
               </li>
               <li onClick={closeDrawer}>
-                <Link href="#">Pricing </Link>
+                <Link href="/pricing">Pricing </Link>
               </li>
               <li onClick={closeDrawer} className={styles.contactLink}>
                 <Link href="/contact">Contact Sales</Link>
               </li>
-              {/* <li onClick={closeDrawer}>
-                <Link href="/demo">Book A Demo</Link>
-              </li> */}
             </ul>
           </div>
         )}
       </nav>
-
     </div>
   );
 };

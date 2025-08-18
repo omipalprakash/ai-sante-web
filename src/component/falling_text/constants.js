@@ -13,5 +13,5 @@ export const FALLING_TEXT_DATA = {
   trigger: 'hover',
   backgroundColor: 'transparent',
   wireframes: false,
-  fontSize: '2rem',
+  fontSize: '1.5rem',
 };

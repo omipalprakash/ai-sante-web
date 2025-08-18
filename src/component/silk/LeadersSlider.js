@@ -8,16 +8,16 @@ import "slick-carousel/slick/slick-theme.css";
 import styles from "./LeadersSlider.module.css";
 import { icons } from "@/utility/image";
 const testimonials = [
-    {
-        id: 1,
-        name: "Bharat Solanki",
-        position: "Director",
-        company: "BiosLab",
-        logo: "/images/bioslab-logo.png",
-        image: "/images/bharat.png",
-        message:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-    },
+    // {
+    //     id: 1,
+    //     name: "Bharat Solanki",
+    //     position: "Director",
+    //     company: "BiosLab",
+    //     logo: "/images/bioslab-logo.png",
+    //     image: "/images/bharat.png",
+    //     message:
+    //         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    // },
     {
         id: 2,
         name: "Sarah Chen",
@@ -28,6 +28,45 @@ const testimonials = [
         message:
             "Working with this team has been transformative for our business. Their innovative approach and dedication to excellence is unmatched.",
     },
+       {
+        id: 3,
+        name: "Michael Rodriguez",
+        position: "CTO",
+        company: "DataSync",
+         image: "/placeholder.svg?height=80&width=80",
+        message:
+            "The level of expertise and professionalism demonstrated throughout our project exceeded all expectations.",
+       
+    },
+    {
+        id: 4,
+        name: "Emily Johnson",
+        position: "Founder",
+        company: "GreenTech",
+        image: "/placeholder.svg?height=80&width=80",
+        message:
+            "Their strategic insights and technical capabilities have been instrumental in scaling our operations globally.",
+        
+    },
+    {   id: 5,
+        name: "David Park",
+        position: "VP Engineering",
+        company: "CloudBase",
+        image: "/placeholder.svg?height=80&width=80",
+        message:
+            "Outstanding service delivery and innovative solutions that have revolutionized our workflow processes.",
+        
+    },
+    {   id: 6,
+        name: "Lisa Wang",
+        position: "Product Manager",
+        company: "InnovateLab",
+        image: "/placeholder.svg?height=80&width=80",
+        message:
+            "The collaboration was seamless and the results speak for themselves. Highly recommend their services.",
+        
+    },
+
 ];
 
 export default function LeadersSlider() {

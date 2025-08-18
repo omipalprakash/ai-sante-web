@@ -1,5 +1,4 @@
-'use client';
-import { icons } from '@/utility/image';
+
 import Image from 'next/image';
 import React from 'react';
 import { cardsData } from '@/lib/teamUp_constant';
@@ -16,7 +15,7 @@ export default function TeamUp() {
           Team Up With <br /> Your Future Crew
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-fit w-full mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6  w-full mx-auto">
           {cardsData.map((card, index) => (
             <div
               key={index}
