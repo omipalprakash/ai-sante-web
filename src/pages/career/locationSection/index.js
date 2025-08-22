@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 
 export default function LocationSection() {
   return (
-    <div className="bg-[#ffffff] pb-20">
-      <div className="max-w-[1440px] mx-auto px-4 py-8 flex flex-col-reverse lg:flex-row items-center lg:items-start gap-8">
+    <div className="bg-[#ffffff] py-[40px] md:py-[60px] lg:py-[90px]">
+      <div className="max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8 flex flex-col-reverse lg:flex-row items-center lg:items-start  gap-8 md:gap-[100px] lg:gap-[195px]">
         {/* Left Section: Images */}
         <motion.div
           className="w-full lg:w-1/2 relative"
@@ -86,7 +86,19 @@ export default function LocationSection() {
               Gujarat 380058
             </p>
           </motion.div>
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.462211076839!2d72.47937667603688!3d23.043510215545137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959cb569e9f14bb%3A0xa065f8f56b62e23e!2sQuantumBot%20Private%20Limited!5e0!3m2!1sen!2sin!4v1755777626700!5m2!1sen!2sin"
+            width="100%"
+            height="325"
+            style={{ border: 0 }}
+            loading="lazy"
+            className='rounded-[20px] '
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+
         </motion.div>
+
       </div>
     </div>
   );

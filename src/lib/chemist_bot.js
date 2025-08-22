@@ -13,30 +13,30 @@ export const features = [
     title: 'Real-Time Visibility',
     description:
       'Access up-to-the-minute secondary sales information directly from stockists\' systems.',
-    image: icons.TabImage,
+    image: icons.RealTime,
   },
   {
     title: 'Automated Tracking',
     description:
       'Eliminates manual uploads and exhausting follow-ups for seamless data collection.',
-    image: icons.TabImage,
+    image: icons.Automated,
   },
   {
     title: 'Error-Free Reporting',
     description:
       'Ensures accuracy by removing human error from the sales data aggregation process.',
-    image: icons.TabImage,
+    image: icons.ErrorFree,
   },
   {
     title: 'Performance Trend Spotter',
     description:
       'Automatically identifies fast-moving products and key sales trends in your territory.',
-    image: icons.TabImage,
+    image: icons.Performance,
   },
   {
     title: 'Plan Ahead, Plan Better',
     description:
       'Provides instant insights to help you plan next steps confidently and stay ahead of the market.',
-    image: icons.TabImage,
+    image: icons.PlanAhead,
   },
 ];

@@ -18,10 +18,12 @@ import {
   CONCLUSIONSECTION_DATA,
   IMPLEMENTATIONAPPROACH_DATA,
 } from '@/lib/roi_constant';
+import Breadcrumbs from '@/component/global/breadcrumbs';
 
 export default function ROI() {
   return (
     <>
+      <Breadcrumbs />
       <HeroComponent />
       <ExecutiveSummary />
       <ROIChallengeSection />

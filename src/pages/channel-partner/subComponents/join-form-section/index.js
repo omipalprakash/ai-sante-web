@@ -4,7 +4,6 @@ import Image from 'next/image';
 import { icons } from '@/utility/image';
 import { motion } from 'framer-motion';
 import { staticData, variants } from '@/lib/channel-partner';
-// import { variants, staticData } from './constants';
 
 const JoinFormSection = () => {
   const [step, setStep] = useState(1);
@@ -24,20 +23,50 @@ const JoinFormSection = () => {
     acceptDeclaration: false,
   });
 
+  const [errors, setErrors] = useState({});
+
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData((prev) => ({
       ...prev,
       [name]: type === 'checkbox' ? checked : value,
     }));
+    setErrors((prev) => ({ ...prev, [name]: '' }));
+  };
+
+  const validateStep = () => {
+    const newErrors = {};
+
+    if (step === 1) {
+      if (!formData.firstName.trim()) newErrors.firstName = 'First Name is required.';
+      if (!formData.lastName.trim()) newErrors.lastName = 'Last Name is required.';
+      if (!formData.email.trim()) newErrors.email = 'Email is required.';
+      if (!formData.phone.trim()) newErrors.phone = 'Phone Number is required.';
+      if (!formData.country.trim()) newErrors.country = 'Country is required.';
+      if (!formData.organizationType.trim()) newErrors.organizationType = 'Organization Type is required.';
+      if (!formData.industry.trim()) newErrors.industry = 'Industry is required.';
+    }
+
+    if (step === 2) {
+      if (!formData.promotionalMethod.trim()) newErrors.promotionalMethod = 'Promotional Method is required.';
+      if (!formData.referralSource.trim()) newErrors.referralSource = 'Referral Source is required.';
+      if (!formData.captcha.trim()) newErrors.captcha = 'Captcha is required.';
+      if (!formData.acceptTerms) newErrors.acceptTerms = 'You must accept Terms.';
+      if (!formData.acceptDeclaration) newErrors.acceptDeclaration = 'You must accept Declaration.';
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
   };
 
   const handleNext = (e) => {
     e.preventDefault();
+    if (!validateStep()) return;
     if (step < 3) setStep(step + 1);
   };
 
   const handleSubmit = () => {
+    // You can send formData to an API here!
     console.log('Submitted data:', formData);
     alert('Form submitted successfully!');
   };
@@ -80,6 +109,9 @@ const JoinFormSection = () => {
                       onChange={handleChange}
                       className={`w-full border-b border-gray-300 focus:outline-none focus:border-black ${styles.field}`}
                     />
+                    {errors.firstName && (
+                      <span className="text-red-500 text-xs">{errors.firstName}</span>
+                    )}
                   </div>
                 </div>
 
@@ -99,6 +131,9 @@ const JoinFormSection = () => {
                       onChange={handleChange}
                       className={`w-full border-b border-gray-300 focus:outline-none focus:border-black  ${styles.field}`}
                     />
+                    {errors.lastName && (
+                      <span className="text-red-500 text-xs">{errors.lastName}</span>
+                    )}
                   </div>
                 </div>
 
@@ -118,6 +153,9 @@ const JoinFormSection = () => {
                       onChange={handleChange}
                       className={`w-full border-b border-gray-300 focus:outline-none focus:border-black ${styles.field}`}
                     />
+                    {errors.email && (
+                      <span className="text-red-500 text-xs">{errors.email}</span>
+                    )}
                   </div>
                 </div>
 
@@ -137,6 +175,9 @@ const JoinFormSection = () => {
                       onChange={handleChange}
                       className={`w-full border-b border-gray-300 focus:outline-none focus:border-black  ${styles.field}`}
                     />
+                    {errors.phone && (
+                      <span className="text-red-500 text-xs">{errors.phone}</span>
+                    )}
                   </div>
                 </div>
 
@@ -157,6 +198,9 @@ const JoinFormSection = () => {
                     <option value="India">India</option>
                     <option value="Canada">Canada</option>
                   </select>
+                  {errors.country && (
+                    <span className="text-red-500 text-xs">{errors.country}</span>
+                  )}
                 </div>
 
                 {/* Organization Type */}
@@ -176,6 +220,9 @@ const JoinFormSection = () => {
                     <option value="Retail">Retail</option>
                     <option value="Agency">Agency</option>
                   </select>
+                  {errors.organizationType && (
+                    <span className="text-red-500 text-xs">{errors.organizationType}</span>
+                  )}
                 </div>
 
                 {/* Industry */}
@@ -195,6 +242,9 @@ const JoinFormSection = () => {
                     <option value="IT">IT</option>
                     <option value="Healthcare">Healthcare</option>
                   </select>
+                  {errors.industry && (
+                    <span className="text-red-500 text-xs">{errors.industry}</span>
+                  )}
                 </div>
 
                 <div className="border-b border-[#17100E66] pb-4">
@@ -206,7 +256,6 @@ const JoinFormSection = () => {
                     Next
                   </button>
                 </div>
-
                 <p className="text-xs text-gray-500 text-start">Step 1/2</p>
               </form>
             </motion.div>
@@ -251,6 +300,9 @@ const JoinFormSection = () => {
                     onChange={handleChange}
                     className={`w-full border-b border-gray-300 focus:outline-none focus:border-black py-2 mb-4 ${styles.field}`}
                   />
+                  {errors.promotionalMethod && (
+                    <span className="text-red-500 text-xs">{errors.promotionalMethod}</span>
+                  )}
                 </div>
 
                 {/* How did you hear */}
@@ -269,6 +321,9 @@ const JoinFormSection = () => {
                     onChange={handleChange}
                     className={`w-full border-b border-gray-300 focus:outline-none focus:border-black py-2 mb-4 ${styles.field}`}
                   />
+                  {errors.referralSource && (
+                    <span className="text-red-500 text-xs">{errors.referralSource}</span>
+                  )}
                 </div>
 
                 {/* Captcha */}
@@ -287,6 +342,9 @@ const JoinFormSection = () => {
                     className={`w-full border-b border-gray-300 focus:outline-none focus:border-black py-2 ${styles.field}`}
                   />
                   <p className="mt-1 text-orange-500 italic">epe6b4</p>
+                  {errors.captcha && (
+                    <span className="text-red-500 text-xs">{errors.captcha}</span>
+                  )}
                 </div>
 
                 {/* Terms and Declaration */}
@@ -299,9 +357,11 @@ const JoinFormSection = () => {
                       onChange={handleChange}
                       className="mt-1"
                     />
-                    I accept the lorem Ipsum agreement, Terms of Service and
-                    Privacy Policy
+                    I accept the lorem Ipsum agreement, Terms of Service and Privacy Policy
                   </label>
+                  {errors.acceptTerms && (
+                    <span className="text-red-500 text-xs">{errors.acceptTerms}</span>
+                  )}
                   <label className="flex items-start gap-2 text-sm">
                     <input
                       type="checkbox"
@@ -310,12 +370,11 @@ const JoinFormSection = () => {
                       onChange={handleChange}
                       className="mt-1"
                     />
-                    I declare that I am not: (i) a Lorem Ipsum reseller partner
-                    or their employee or relative, and agree not to participate
-                    in any other partnership program offered by Lorem Ipsum at
-                    least for a period of 12 months or (ii) a Lorem Ipsum
-                    employee or their relative
+                    I declare that I am not: (i) a Lorem Ipsum reseller partner or their employee or relative, and agree not to participate in any other partnership program offered by Lorem Ipsum at least for a period of 12 months or (ii) a Lorem Ipsum employee or their relative
                   </label>
+                  {errors.acceptDeclaration && (
+                    <span className="text-red-500 text-xs">{errors.acceptDeclaration}</span>
+                  )}
                 </div>
 
                 <div className="border-b border-[#17100E66] pb-4">
@@ -332,7 +391,7 @@ const JoinFormSection = () => {
             </motion.div>
           )}
 
-          {/* Step 3 */}
+          {/* Step 3 (Success) */}
           {step === 3 && (
             <motion.div
               key="step3"
@@ -350,13 +409,19 @@ const JoinFormSection = () => {
                   Thanks!
                 </h1>
                 <p
-                  className="font-[400] text-[20px]"
+                  className="font- text-[20px]"
                   style={{ fontFamily: 'Erstoria' }}
                 >
                   A member of the team will be in
                   <br />
                   touch with you shortly.
                 </p>
+                <button
+                  onClick={handleSubmit}
+                  className="w-full cursor-pointer mt-4 text-[13px] md:text-[14px] lg:text-[16px] bg-black text-white py-2 rounded font-semibold hover:bg-gray-800 transition active:bg-gray-600"
+                >
+                  Finish
+                </button>
               </div>
             </motion.div>
           )}

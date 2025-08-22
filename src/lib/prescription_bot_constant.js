@@ -15,25 +15,25 @@ export const features = [
     title: 'Real-Time Pitching',
     description:
       'Get instant, custom-built sales pitches tailored to your specific doctor and products.',
-    image: icons.TabImage,
+    image: icons.RealTimePitching,
   },
   {
     title: 'Personalized Recommendations',
     description:
       'Receive data-driven suggestions for additional products, opening new sales opportunities.',
-    image: icons.TabImage,
+    image: icons.PersonalizedRecommendations,
   },
   {
     title: 'Meeting Preparedness Engine',
     description:
       'Ensure medical reps are fully equipped with tailored talking points before every doctor interaction.',
-    image: icons.TabImage,
+    image: icons.MeetingPreparedness,
   },
   {
     title: 'Sales Cycle Accelerator',
     description:
       'Streamline the pitching process, helping close deals more efficiently and quickly.',
-    image: icons.TabImage,
+    image: icons.SalesCycle,
   },
 
 ];

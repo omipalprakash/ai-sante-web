@@ -9,9 +9,9 @@ export const STORIES_DATA = [
     image: icons.blogimage1,
     alt: 'Doctor preparing AI medicine in lab with test tubes',
     date: 'June 15, 2023',
-    title: 'Transforming Healthcare with AI',
+    title: 'AI Trends Transforming Field Force to Boost Sales & Maximize ROI',
     excerpt: 'How our team developed a breakthrough diagnosis system using machine learning.',
-    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl.',
+    content: `Ever wonder how AI is shaking up pharma sales? It's all about moving past outdated approaches and embracing smarter ways to connect with healthcare professionals. This article breaks down how artificial intelligence is becoming a powerful assistant for field forces, making every interaction more impactful. Discover the four key trends that are completely transforming the game.`,
     tags: ['AI', 'Healthcare', 'Research']
   },
   {
@@ -22,9 +22,9 @@ export const STORIES_DATA = [
     image: icons.blogimage2,
     alt: 'Hospital building illustration for patient care article',
     date: 'May 22, 2023',
-    title: 'The Future of Remote Patient Monitoring',
+    title: 'Reasons Why Pharma Should Move Beyond Generic CRMs to Drive More Prescriptions',
     excerpt: 'Exploring how IoT devices are revolutionizing home healthcare management.',
-    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    content: `Is your sales team giving their all, but prescription numbers just aren't budging? It might not be them, but your CRM! Generic systems just don't cut it in the complex world of pharma sales, with all its unique regulations and relationships. This article dives into why your current CRM could be holding you back and what you can do about it to truly boost growth.`,
     tags: ['IoT', 'Remote Care', 'Technology']
   },
   {
@@ -35,9 +35,9 @@ export const STORIES_DATA = [
     image: icons.blogimage3,
     alt: 'Doctor and child discussing neuroscience treatment',
     date: 'April 10, 2023',
-    title: 'Breakthroughs in Neuroscience Imaging',
+    title: 'Ways AI Sante is Streamlining Pharma Stockist Operations',
     excerpt: 'New technologies helping us understand the human brain better than ever before.',
-    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    content: `Juggling pharma stockist operations can feel like a never-ending battle with paperwork and disconnected systems. But what if AI could simplify it all? This article explores how Ai Sante's RxIntel AI is completely transforming how pharmaceutical companies manage their stockists, offering real-time insights and intelligent automation.`,
     tags: ['Neuroscience', 'Imaging', 'Research']
   },
   {
@@ -48,33 +48,12 @@ export const STORIES_DATA = [
     image: icons.blogimage4,
     alt: 'Concerned boy with medicine bottle on table',
     date: 'March 5, 2023',
-    title: 'Using Big Data to Predict Patient Outcomes',
+    title: `What Pharma Can Learn from the Tech Industry's Approach to AI Adoption?`,
     excerpt: 'How were leveraging analytics to improve treatment plans and save lives.',
-    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    content: `Ever wondered how pharmaceutical companies can speed up AI adoption without risking patient safety? It's a tricky balance, but tech companies offer valuable lessons. This article dives into how pharma can start small with AI in areas like sales and field force management, building confidence and seeing real ROI, before expanding to truly transform the industry.`,
     tags: ['Data Science', 'Analytics', 'Healthcare']
   },
-  {
-    id: 5,
-    name: 'Dr. Marcus Johnson',
-    role: 'Medical Director',
-    company: 'Innovative Health Systems',
-    image: icons.blogimage1,
-    date: 'February 18, 2023',
-    title: 'The Ethical Considerations of AI in Medicine',
-    excerpt: 'Navigating the complex landscape of automated healthcare decisions.',
-    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    tags: ['Ethics', 'AI', 'Healthcare Policy']
-  },
-  {
-    id: 6,
-    name: 'Lisa Chang',
-    role: 'Product Designer',
-    company: 'MedTech Innovations',
-    image: icons.blogimage1,
-    date: 'January 30, 2023',
-    title: 'Designing Better Health Interfaces',
-    excerpt: 'Creating user-centered experiences for patients and healthcare providers.',
-    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    tags: ['UX Design', 'Healthcare', 'Accessibility']
-  }
+
 ];
+
+

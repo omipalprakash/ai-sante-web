@@ -126,7 +126,7 @@ export const resourceItems = [
     title: 'Blogs',
     description:
       'More than a chatbot. Resolve 60% of support volume instantly.',
-    url: '/blog',
+    url: '/#stories',
   },
   // {
   //   title: 'Awards',
@@ -136,8 +136,8 @@ export const resourceItems = [
   // },
   {
     title: 'Life at AI Sante',
-    description:
-      'More than a chatbot. Resolve 60% of support volume instantly.',
+    // description:
+    //   'More than a chatbot. Resolve 60% of support volume instantly.',
     url: '/career',
   },
   {

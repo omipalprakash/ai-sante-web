@@ -19,14 +19,14 @@ export default function ChannelPartnerSection() {
               team at QuantumBot. As a Graphics Designer, you will play a
               pivotal role in creating visually appealing and effective.
             </p>
-            <a
+            {/* <a
               href="https://quantumbot.com/affiliate-program"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-[#4B3732] text-white font-[Poppins] font-[400] px-[23px] py-3  text-[13px] sm:text-[14px] md:text-[16px] hover:bg-[#6d4c41] transition rounded-[7.11px]"
             >
               Get Started
-            </a>
+            </a> */}
           </div>
 
           {/* Right: Images and Avatars */}

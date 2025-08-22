@@ -159,14 +159,14 @@ const Leaders = () => {
                                 <h3 className={`styles.profileName font-['Erstoria',_sans-serif mb-2 font-bold text-[#000000]`}>{profiles[activeProfile].name}</h3>
                                 <p className={`${styles.profilePosition}`}>{profiles[activeProfile].position}</p>
                             </div>
-                            <div className={styles.companyLogo}>
+                            {/* <div className={styles.companyLogo}>
                                 <Image
                                     src={icons.BiosLab || "/placeholder.svg"}
                                     alt="BiosLab"
                                     width={148}
                                     height={46}
                                 />
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

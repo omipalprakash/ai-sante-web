@@ -92,8 +92,8 @@ export default function WordsFromCEO() {
             <Image
               src={icons.admin}
               alt="CEO Portrait - Violaine Joshi"
-              width={688}
-              height={711}
+              width={533}
+              height={533}
               className={styles["ceo-section__portrait"]}
               priority
             />

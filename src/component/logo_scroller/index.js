@@ -27,9 +27,10 @@ export const Logo_Scroller = ({
   parallaxStyle,
   scrollerStyle,
   from = 10,
-  to = '-202.5%'
+  to = '-202.5%',
+  isTeamUp = true
 }) => {
-  const allImages = [...texts, ...texts]
+  const allImages = Array(numCopies).fill(texts).flat();
   function VelocityText({
     children,
     baseVelocity = velocity,
@@ -111,18 +112,18 @@ export const Logo_Scroller = ({
           initial={{ x: `${from}` }}
           animate={{ x: `${to}` }}
           transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
-          className={`${scrollerClassName} flex whitespace-nowrap text-center font-sans text-4xl font-bold tracking-[-0.02em] drop-shadow md:text-[5rem] md:leading-[5rem] justify-between items-center`}
+          className={`${scrollerClassName} flex whitespace-nowrap text-center font-sans text-4xl font-bold tracking-[-0.02em] drop-shadow md:text-[5rem] md:leading-[5rem] ${isTeamUp ? "justify-between" : "justify-center"} items-center`}
           style={{ ...scrollerStyle }}
         >
           {allImages.map((image, index) => {
-            return <Image className="h-[50px] lg:h-[100px] w-auto pr-20 invert grayscale brightness-200"
+            return <Image className={`max-h-[50px] lg:max-h-[100px] w-auto  ${isTeamUp ? "pr-20 invert grayscale brightness-200" : "pr-[16px]"}`}
               width={0}
               height={0}
               sizes="100vw"
               src={image.url}
               alt={image.alt}
               key={index} />;
-          })},{spans}
+          })} {spans}
         </motion.div>
 
       </div>
@@ -130,7 +131,7 @@ export const Logo_Scroller = ({
   }
 
   return (
-    <section className={styles.logoScroller}>
+    <section className={`${isTeamUp ? "bg-white py-[10px]" : ""}`}>
       <VelocityText
         className={className}
         baseVelocity={velocity}

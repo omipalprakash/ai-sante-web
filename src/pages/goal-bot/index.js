@@ -27,7 +27,7 @@ export default function GoalBot() {
         title={'A Sneak Peek inside how Goal Bot equips your to Achieve your Sales Target'}
         video1={video}
       />
-      <FeedbackGrid />
+      {/* <FeedbackGrid /> */}
       <CustomerStroresSection data={CUSTOMER_STORES_SECTION_DATA_GOAL_BOT} />
     </>
   );

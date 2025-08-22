@@ -5,6 +5,7 @@ import React from 'react';
 import Image from 'next/image';
 import { icons } from '@/utility/image';
 import jobData from '@/lib/career_details_jobHiring';
+import Link from 'next/link';
 
 const JobOpeningCard = () => {
   return (
@@ -13,107 +14,112 @@ const JobOpeningCard = () => {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
           <h1
             className="text-3xl font-normal text-[#89A884] text-[24px] md:text-[38px] lg:text-[52px]"
-            style={{ fontFamily: 'Erstoria' }}
+
           >
             {jobData.title}
           </h1>
           <button
-            className="mt-4 md:mt-0 px-4 py-2 bg-[#89A884] text-white font-normal rounded px-6 py-2"
-            style={{ fontFamily: 'Erstoria' }}
+            className="mt-4 md:mt-0 max-w-[113px] min-h-[41px] rounded-[10px] px-[24px] py-[7px] bg-sage hover:bg-sageDark text-white font-erstoria cursor-pointer"
+
           >
             Apply
           </button>
         </div>
-
-        <div className="flex flex-wrap gap-4 text-normal  mt-2 mb-4">
-          <div
-            className="flex items-center gap-2"
-            style={{ fontFamily: 'Salmond' }}
-          >
+        <div className="flex flex-wrap gap-6 text-normal mt-2 mb-4">
+          <div className="flex items-center gap-2">
             <Image
               src={icons.location}
               alt="Location Icon"
-              width={15}
-              height={15}
+              width={20}
+              height={20}
+              className="w-6 h-6 object-contain"
             />
             {jobData.location}
           </div>
-          <div
-            className="flex items-center gap-2"
-            style={{ fontFamily: 'Salmond' }}
-          >
+
+          <div className="flex items-center gap-2">
             <Image
               src={icons.userLogo}
               alt="User Icon"
-              width={15}
-              height={15}
+              width={20}
+              height={20}
+              className="w-6 h-6 object-contain"
             />
             Position Available: {jobData.positions}
           </div>
-          <div
-            className="flex items-center gap-2"
-            style={{ fontFamily: 'Salmond' }}
-          >
-            <Image src={icons.FullTimeWorkLogo} alt="Full Time Work Icon" width={50} height={50} />
+
+          <div className="flex items-center gap-2">
+            <Image
+              src={icons.FullTimeWorkLogo}
+              alt="Full Time Work Icon"
+              width={20}
+              height={20}
+              className="w-6 h-6 object-contain"
+            />
             {jobData.type}
           </div>
-          <div
-            className="flex items-center gap-2"
-            style={{ fontFamily: 'Salmond' }}
-          >
-            <Image src={icons.ExperienceLogo} alt="Experience Icon" width={50} height={50} />
+
+          <div className="flex items-center gap-2">
+            <Image
+              src={icons.ExperienceLogo}
+              alt="Experience Icon"
+              width={20}
+              height={20}
+              className="w-6 h-6 object-contain"
+            />
             Experience: {jobData.experience}
           </div>
         </div>
 
+
         <p
-          className="font-normal text-[18px] mb-4"
-          style={{ fontFamily: 'Salmond' }}
+          className="mb-4 text-charcoalGray"
         >
           {jobData.intro}
         </p>
 
         <div className='mb-4'>
           <h2
-            className="text-[1rem] md:text-[1.125rem] lg:text-[1.5rem] font-bold text-gray-900 mb-3 sm:mb-4"
-            style={{ fontFamily: 'Salmond' }}
+            className="text-[1rem] md:text-[1.125rem] lg:text-[1.5rem] font-medium text-cocoa mb-[12px] md:mb-[10px] lg:mb-[20px]"
+
           >
             Key Responsibilities:
           </h2>
           <ul
-            className="space-y-2 sm:space-y-3 text-sm sm:text-base text-gray-700"
-            style={{ fontFamily: 'Salmond' }}
+            className="text-charcoalGray ml-[10px]"
           >
             {jobData.responsibilities.map((item, index) => (
-              <li key={index} className='flex items-start gap-2'><span class="w-2 h-2 bg-[#89A884] rounded-full mt-2 flex-shrink-0"></span>{item}</li>
+              <li key={index} className='flex items-start gap-2'><span class="w-1 h-1 bg-cocoa rounded-full mt-2 flex-shrink-0"></span>{item}</li>
             ))}
           </ul>
         </div>
 
         <div className='mb-4'>
           <h2
-            className="text-[1rem] md:text-[1.125rem] lg:text-[1.5rem] font-bold text-gray-900 mb-3 sm:mb-4"
-            style={{ fontFamily: 'Salmond' }}
+            className="text-[1rem] md:text-[1.125rem] lg:text-[1.5rem] font-medium text-cocoa mb-[12px] md:mb-[10px] lg:mb-[20px]"
+
           >
             Qualifications:
           </h2>
           <ul
-            className="space-y-2 sm:space-y-3 text-sm sm:text-base text-gray-700"
+            className="text-charcoalGray ml-[10px]"
             style={{ fontFamily: 'Salmond' }}
           >
-            {jobData.qualifications.map((item, index) => (
-              <li key={index} className='flex items-start gap-2'><span class="w-2 h-2 bg-[#89A884] rounded-full mt-2 flex-shrink-0"></span>{item}</li>
+            {jobData.responsibilities.map((item, index) => (
+              <li key={index} className='flex items-start gap-2'><span class="w-1 h-1 bg-cocoa rounded-full mt-2 flex-shrink-0"></span>{item}</li>
             ))}
           </ul>
         </div>
 
         <p
-          className="font-[700] mt-6 text-[16px] md:text-[18px] lg:text-[24px] leading-[32px]"
-          style={{ fontFamily: 'Salmond' }}
+          className="font-[700] mt-6 text-[16px] md:text-[18px] lg:text-[24px] leading-[32px] text-cocoa"
+
         >
           Join us at{' '}
           <span className="font-[700] text-[16px] md:text-[18px] lg:text-[24px] leading-[32px] text-[#89A884] underline">
-            {jobData.company}
+            <Link href="https://www.aisante.in">
+              {jobData.company}
+            </Link>
           </span>
           , where creativity meets innovation, and your designs can make a
           lasting impact!

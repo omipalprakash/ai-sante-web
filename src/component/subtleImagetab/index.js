@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
@@ -72,8 +74,8 @@ const SubtleImageTab = ({ features = [] }) => {
                   <Image
                     src={features[activeTab].image}
                     alt={`${features[activeTab].title} Preview`}
-                    width={1800}
-                    height={875}
+                    width={1226}
+                    height={1593}
                     className="rounded-xl object-cover w-full h-auto"
                     priority // Ensures smoother image loading
                   />

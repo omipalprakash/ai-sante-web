@@ -50,7 +50,7 @@
 
 .ceo-section__portrait {
     object-fit: cover;
-    max-width: 285px;
+
     height: auto;
 }
 
@@ -61,6 +61,11 @@
 
 
 @media (min-width: 48em) {
+    .description__image {
+        justify-content: end;
+        align-items: end;
+    }
+
     .description {
         padding: 47px 0px 85px 0px;
     }
@@ -78,10 +83,7 @@
         letter-spacing: 0;
     }
 
-    .ceo-section__portrait {
-        max-width: 376px;
-        max-height: 392px;
-    }
+
 
     .description__signature,
     .description__signature svg {

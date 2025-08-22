@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-  
+
     <footer className="footer bg-[#F5F5F5]  w-full py-[30px]">
       <div className="max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
@@ -18,7 +18,7 @@ export default function Footer() {
               </Link>
             </div>
             <p className='leading-[1.5]'>
-              Next - Gen Pharma CRM - Optimize sales, automate reporting. Make smarter decision with Roland AI.
+              Next - Gen Pharma CRM - Optimize sales, automate reporting. Make smarter decision with RxIntel AI.
             </p>
           </div>
 
@@ -27,15 +27,15 @@ export default function Footer() {
             <h5 className="text-[#000000]  mb-6">COMPANY</h5>
             <div className="flex gap-6">
               <ul className="flex gap-[14px] flex-col">
-                <li><Link href="/">Home</Link></li>
-                <li><Link href="/chemist-bot">Products</Link></li>
-                <li><Link href="/">Testimonial</Link></li>
-                <li><Link href="/">About Us</Link></li>
+                <li><Link href="/" className='hover:text-cocoa'>Home</Link></li>
+                <li><Link href="/chemist-bot" className='hover:text-cocoa'>Products</Link></li>
+                {/* <li><Link href="/">Testimonial</Link></li> */}
+                {/* <li><Link href="/">About Us</Link></li> */}
               </ul>
               <ul className="space-y-2">
-                <li><Link href="/">Awards</Link></li>
-                <li><Link href="/blog">Blog</Link></li>
-                <li><Link href="/">Get Demo</Link></li>
+                {/* <li><Link href="/" className='hover:text-cocoa'>Awards</Link></li> */}
+                <li><Link href="/blog" className='hover:text-cocoa'>Blog</Link></li>
+                {/* <li><Link href="/" className='hover:text-cocoa'>Get Demo</Link></li> */}
               </ul>
             </div>
           </div>
@@ -44,10 +44,10 @@ export default function Footer() {
           <div>
             <h5 className="text-[#000000] mb-6">HELP</h5>
             <ul className="flex gap-[14px] flex-col">
-              <li><Link href="/">Customer Support</Link></li>
-              <li><Link href="/">Terms & Conditions</Link></li>
+              {/* <li><Link href="/">Customer Support</Link></li> */}
+              {/* <li><Link href="/">Terms & Conditions</Link></li> */}
               <li>
-                <Link href={'/privacy-policy'}>
+                <Link href={'/privacy-policy'} className='hover:text-cocoa'>
                   Privacy Policy
                 </Link>
               </li>
@@ -64,14 +64,50 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-2">
                 <Image src={icons.email} alt="email" width={20} height={20} />
-                <Link href="mailto:info@aisante.in"><span>info@aisante.in</span></Link>
+                <Link href="mailto:info@aisante.in" className='hover:text-cocoa'><span>info@aisante.in</span></Link>
               </li>
               <li className="flex gap-[14px]">
-                <Link href="#"><Image src={icons.twitter} alt="twitter" width={26} height={26} /></Link>
-                <Link href="#"><Image src={icons.facebook} alt="facebook" width={26} height={26} /></Link>
-                <Link href="#"><Image src={icons.instagram} alt="instagram" width={26} height={26} /></Link>
-                <Link href="#"><Image src={icons.github} alt="github" width={26} height={26} /></Link>
+                <Link href="https://x.com/ai_sante" target="_blank" rel="noopener noreferrer">
+                  <Image
+                    src={icons.twitter}
+                    alt="twitter"
+                    width={26}
+                    height={26}
+                    className="transition-transform duration-300 hover:scale-110 hover:opacity-80"
+                  />
+                </Link>
+
+                <Link href="https://facebook.com/ai_sante" target="_blank" rel="noopener noreferrer">
+                  <Image
+                    src={icons.facebook}
+                    alt="facebook"
+                    width={26}
+                    height={26}
+                    className="transition-transform duration-300 hover:scale-110 hover:opacity-80"
+                  />
+                </Link>
+
+                <Link href="https://www.instagram.com/aisante__/" target="_blank" rel="noopener noreferrer">
+                  <Image
+                    src={icons.instagram}
+                    alt="instagram"
+                    width={26}
+                    height={26}
+                    className="transition-transform duration-300 hover:scale-110 hover:opacity-80"
+                  />
+                </Link>
+
+                <Link href="https://www.linkedin.com/company/ai-sante/" target="_blank" rel="noopener noreferrer">
+                  <Image
+                    src={icons.linkedin}
+                    alt="linkedin"
+                    width={26}
+                    height={26}
+                    className="transition-transform duration-300 hover:scale-110 hover:opacity-80"
+                  />
+                </Link>
               </li>
+
             </ul>
           </div>
         </div>

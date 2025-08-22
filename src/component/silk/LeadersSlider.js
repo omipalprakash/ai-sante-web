@@ -28,15 +28,15 @@ const testimonials = [
         message:
             "Working with this team has been transformative for our business. Their innovative approach and dedication to excellence is unmatched.",
     },
-       {
+    {
         id: 3,
         name: "Michael Rodriguez",
         position: "CTO",
         company: "DataSync",
-         image: "/placeholder.svg?height=80&width=80",
+        image: "/placeholder.svg?height=80&width=80",
         message:
             "The level of expertise and professionalism demonstrated throughout our project exceeded all expectations.",
-       
+
     },
     {
         id: 4,
@@ -46,25 +46,27 @@ const testimonials = [
         image: "/placeholder.svg?height=80&width=80",
         message:
             "Their strategic insights and technical capabilities have been instrumental in scaling our operations globally.",
-        
+
     },
-    {   id: 5,
+    {
+        id: 5,
         name: "David Park",
         position: "VP Engineering",
         company: "CloudBase",
         image: "/placeholder.svg?height=80&width=80",
         message:
             "Outstanding service delivery and innovative solutions that have revolutionized our workflow processes.",
-        
+
     },
-    {   id: 6,
+    {
+        id: 6,
         name: "Lisa Wang",
         position: "Product Manager",
         company: "InnovateLab",
         image: "/placeholder.svg?height=80&width=80",
         message:
             "The collaboration was seamless and the results speak for themselves. Highly recommend their services.",
-        
+
     },
 
 ];
@@ -113,13 +115,13 @@ export default function LeadersSlider() {
                                         style={{ width: "64px", height: "78px" }}
                                     />
                                     <div className="flex flex-col gap-[16px] ">
-                                        <Image
+                                        {/* <Image
                                             src={icons.BiosLab || "/placeholder.svg"}
                                             alt={`${item.company} Logo`}
                                             width={69}
                                             height={20}
                                             className={styles.leaders__logo}
-                                        />
+                                        /> */}
                                         <p className={styles.leaders__designation}>
                                             {item.name} – <span className=" opacity-85">{item.position}</span>
                                         </p>

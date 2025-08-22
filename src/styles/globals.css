@@ -15,8 +15,8 @@
   --medium-gray: #8F8F8F;
   --gunmetal-gray: #52525B;
   --slate-gray: #71717A;
-  --container: 83.75rem;
-  --blue-gray: #D9E3F0;
+
+
 
   /*---Font-Size---*/
   --fs-16: 0.813rem;
@@ -30,10 +30,6 @@
   --font-regular: 400;
   --font-medium: 500;
   --font-semi-bold: 600;
-
-  /*========== Font Family ==========*/
-  --poppins-font: 'Poppins', sans-serif;
-  --erstoria: 'Erstoria', sans-serif;
 }
 
 html {
@@ -50,12 +46,7 @@ html {
 
 
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+
 
 body {
   background: #ffffff;
@@ -70,38 +61,99 @@ body {
 
 }
 
+@theme {
+  /* Custom font */
+  --font-salmond: 'Salmond', sans-serif;
+  --font-erstoria: 'Erstoria', sans-serif;
+  /*color*/
+  --color-charcoalGray: #6B6A6B;
+  --color-sage: #89A884;
+  --color-gray: #D9E3F0;
+  --color-ice: #EFF0F6;
+  --color-cocoa: #453030;
+  --color-scarlet: #DF1E21;
+  --color-lavenderGray: #EFF0F6;
+  --color-sageDark: #799673;
+  --color-goldenBrown: #C37A20;
+  --color-iceBlue: #EEF5F8;
+  --color-skyMistBlue: #A0C0EA;
+}
+
 input,
 textarea {
-  border: none;
   outline: none;
 }
 
 
 
+
+
+@layer base {
+
   h1,
   h2,
   h3 {
-  font-weight: var(--font-regular);
-  line-height: 1;
-  font-family: 'Erstoria', sans-serif;
+    font-weight: var(--font-regular);
+    line-height: 1;
+    @apply font-erstoria;
 
-}
- @layer base{
+  }
 
-  h2{
+  h2 {
     @apply text-[1.5rem] md:text-[2.5rem] lg:text-[3.25rem];
   }
-  h3{
+
+  h3 {
     @apply text-[1rem] md:text-[1.25rem] lg:text-[1.5rem];
   }
-  h4{
+
+  h4 {
     @apply text-[0.8125rem] md:text-[1.125rem] lg:text-[1.25rem];
   }
-  h5{
+
+  h5 {
     @apply text-[0.75rem] md:text-[0.8125rem] lg:text-[1rem] tracking-[1px] font-semibold;
   }
 
- }
+  ul {
+    @apply list-none m-0 p-0;
+
+  }
+
+}
+
+@utility container {
+  padding-inline: 1rem;
+  margin-inline: auto;
+  max-width: 1404px;
+
+  @variant sm {
+    padding-inline: 20px;
+  }
+
+  @variant md {
+    padding-inline: 2rem;
+  }
+
+  @variant lg {}
+
+
+}
+
+
+.slick-slide>div {
+  height: 100%;
+  display: flex;
+}
+
+.slick-track {
+  display: flex !important;
+}
+
+.slick-track .slick-slide {
+  height: auto !important;
+  padding-bottom: 10px;
+}
 
 img {
   user-select: none;
@@ -213,11 +265,7 @@ img {
   text-transform: capitalize;
 }
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+
 
 .common-title {
   font-size: 24px;

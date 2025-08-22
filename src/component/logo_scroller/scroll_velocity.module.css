@@ -1,8 +1,3 @@
-.logoScroller {
-  background-color: var(--bg-white);
-  padding: 10px 0px;
-}
-
 .parallax {
   position: relative;
   overflow: hidden;

@@ -44,7 +44,7 @@ export default function CustomerStroresSection({ data = [] }) {
   const slide = data[currentIndex];
 
   return (
-    <section className="w-full bg-white overflow-hidden py-[30px] md:py-[20px]  lg:py-[59px]">
+    <section className="w-full overflow-hidden py-[30px] md:py-[20px]  lg:py-[59px]">
       <div className='max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8'>
         <div className="mb-[10px] md:mb-[32px] lg:mb-[60px] border-b border-black pb-2">
           <Header_text text={'Customer Stories'} />
@@ -53,7 +53,7 @@ export default function CustomerStroresSection({ data = [] }) {
         <div className="flex flex-col-reverse gap-5 md:grid md:grid-cols-2  xl:grid-cols-[773px_547px] md:gap-2.5 lg:gap-5 place-items-start">
           {/* Static Text Block */}
           <div className='flex flex-col justify-between h-full gap-[60px] w-full'>
-            <p className='lg:text-[24px] leading-[2] max-w-[715px]'>
+            <p className='text-[16px] md:text-[18px] lg:text-[24px] leading-[2] max-w-[715px] text-black'>
               {slide.quote}
             </p>
             <div className="flex flex-wrap justify-between pt-4 pb-[22px] border-b-2 border-black">

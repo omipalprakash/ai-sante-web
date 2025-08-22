@@ -5,7 +5,7 @@ export const cardsData = [
     title: 'UI / UX',
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    icon: icons.uxui,
+    url: icons.uxui,
     alt: 'UI / UX',
     bgColor: 'bg-[#FFE2E6]',
     textColor: 'text-[#C84E5F]',
@@ -14,7 +14,7 @@ export const cardsData = [
     title: 'React',
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    icon: icons.react,
+    url: icons.react,
     alt: 'React',
     bgColor: 'bg-[#EBFFEF]',
     textColor: 'text-[#467D50]',
@@ -23,7 +23,7 @@ export const cardsData = [
     title: 'Python',
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    icon: icons.python,
+    url: icons.python,
     alt: 'Python',
     bgColor: 'bg-[#ECE5FF]',
     textColor: 'text-[#68589A]',
@@ -32,7 +32,7 @@ export const cardsData = [
     title: '.NET',
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    icon: icons.dotnet,
+    url: icons.dotnet,
     alt: '.NET',
     bgColor: 'bg-[#DBEBFD]',
     textColor: 'text-[#3E5772]',
@@ -41,7 +41,7 @@ export const cardsData = [
     title: 'QA',
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    icon: icons.qa,
+    url: icons.qa,
     alt: 'QA',
     bgColor: 'bg-[#EAF6C8]',
     textColor: 'text-[#4D5D1F]',
@@ -50,7 +50,7 @@ export const cardsData = [
     title: 'BDE / BDM',
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    icon: icons.bdebdm,
+    url: icons.bdebdm,
     alt: 'BDE / BDM',
     bgColor: 'bg-[#F3ECCC]',
     textColor: 'text-[#6D684F]',
@@ -59,7 +59,7 @@ export const cardsData = [
     title: 'Human Resources',
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    icon: icons.humanresorce,
+    url: icons.humanresorce,
     alt: 'Human Resources',
     bgColor: 'bg-[#C1DBD9]',
     textColor: 'text-[#476E6B]',
@@ -68,7 +68,7 @@ export const cardsData = [
     title: 'Data Analysis',
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    icon: icons.dataanalysis,
+    url: icons.dataanalysis,
     alt: 'ReData Analysisact',
     bgColor: 'bg-[#CBD5E4]',
     textColor: 'text-[#59677D]',
@@ -77,7 +77,7 @@ export const cardsData = [
     title: 'Video Editor',
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    icon: icons.videoEditor,
+    url: icons.videoEditor,
     alt: 'Video Editor',
     bgColor: 'bg-[#E7B3EB]',
     textColor: 'text-[#754879]',

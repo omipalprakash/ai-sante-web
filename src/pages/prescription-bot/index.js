@@ -26,7 +26,7 @@ export default function PrescriptionBot() {
         title={'See how Prescription Bot makes every Doctor Meeting Effective and more PROFITABLE'}
         video1={video}
       />
-      <FeedbackGrid />
+      {/* <FeedbackGrid /> */}
       <CustomerStroresSection data={CUSTOMER_STORES_SECTION_DATA_PRESCRIPTION_BOT} />
     </>
   );

@@ -33,7 +33,7 @@ export default function ChemistBot() {
         title={`See how Chemist Bot Transforms tour Secondary Sales Tracking without Manual Uploads and Delays`}
         video1={video}
       />
-      <FeedbackGrid />
+      {/* <FeedbackGrid /> */}
       <CustomerStroresSection data={CUSTOMER_STORES_SECTION_DATA_Chemist_Bot} />
     </>
   );

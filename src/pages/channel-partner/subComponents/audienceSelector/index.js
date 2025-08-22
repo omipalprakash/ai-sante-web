@@ -8,7 +8,7 @@ const AudienceSelector = () => {
   const active = audienceData.find((item) => item.key === selected);
 
   return (
-    <section className="bg-white py-12 px-4 ] md:px-8 lg:px-16">
+    <section className="bg-gray-50 py-12 px-4 ] md:px-8 lg:px-16">
       <div className="bg-[#EEF5F8] p-6 sm:p-10  rounded-2xl max-w-[1440px] mx-auto  lg:my-20">
         <div className="flex flex-col lg:flex-row gap-10">
           {/* Left: Audience Options */}
@@ -23,9 +23,8 @@ const AudienceSelector = () => {
               <button
                 key={item.key}
                 onClick={() => setSelected(item.key)}
-                className={`text-left px-4 py-3 rounded-lg font-[500] text-[17.44px] cursor-pointer ${
-                  selected === item.key ? 'bg-black text-white' : ' text-black'
-                }`}
+                className={`text-left px-4 py-3 rounded-lg font-[500] text-[17.44px] cursor-pointer ${selected === item.key ? 'bg-black text-white' : ' text-black'
+                  }`}
                 style={{ fontFamily: 'Poppins' }}
               >
                 {item.title}

@@ -1,17 +1,15 @@
-import styles from './aboutourcompany.module.css';
-
 export default function AboutOurCompany() {
   return (
-    <section className=" bg-white mt-[39px] md:mt-[73px] lg:mt-[117px]">
+    <section className="py-[40px] md:py-[73px] lg:py-[90px]">
       <div className="max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8">
-        <h2 className="about-carrer font-[Erstoria]  text-[#C37A20] text-center text-[20px] md:text-[38px] lg:text-[52px] mb-[20px] md:mb-[24px] lg:mb-8 uppercase">
+        <h2 className="text-center text-goldenBrown mb-[20px] md:mb-[24px] lg:mb-[32px]">
           A Little More to Know About Us Before you Apply
         </h2>
-        <div className="flex flex-col gap-[27px]  text-justify">
-          <p className='leading-[1.6] lg:leading-[1.5]'>
+        <div className="flex flex-col gap-[20px]  text-justify">
+          <p>
             At AI Sante, we've developed RxIntel AI to transform pharmaceutical operations. This powerful tool provides real-time, intelligent insights and uses AI to optimize performance. RxIntel AI helps Medical Representatives (MRs) boost sales and reach their full potential by giving them tailored, science-backed product knowledge. This allows them to connect more effectively with doctors and increase prescription growth.
           </p>
-          <p className='leading-[1.6] lg:leading-[1.5]'>
+          <p>
             RxIntel AI also features dynamic chatbots that automate key tasks like MR recruiting, sales, marketing, revenue tracking, and performance management, making operations smoother and more efficient. With our AI-enhanced strategies, RxIntel AI boosts productivity, making every decision smarter, faster, and data-driven.
           </p>
 

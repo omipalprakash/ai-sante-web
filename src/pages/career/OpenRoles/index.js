@@ -1,66 +1,117 @@
-'use client';
+"use client"
 
-import { icons } from '@/utility/image';
-import Image from 'next/image';
-import React from 'react';
+import { useState } from "react"
+import { ArrowUpRight } from "lucide-react"
+import Link from "next/link"
 
-const roles = [
-  { title: 'Graphics Designer', location: 'Ahmedabad' },
-  { title: 'Digital Marketing Executive', location: 'Ahmedabad' },
-  { title: 'Business Development Manager', location: 'Ahmedabad' },
-  { title: 'Motion Graphics Designer', location: 'Ahmedabad' },
-  { title: 'Python Developer', location: 'Ahmedabad' },
-  { title: 'React Developer', location: 'Ahmedabad' },
-];
+const jobListings = [
+  {
+    title: "UI/UX Designer",
+    location: "Ahmedabad",
+    positions: 2,
+    featured: true,
+  },
+  // {
+  //   title: "React Developer",
+  //   location: "Ahmedabad",
+  //   positions: 3,
+  //   featured: false,
+  // },
+  // {
+  //   title: "Python",
+  //   location: "Ahmedabad",
+  //   positions: 1,
+  //   featured: false,
+  // },
+  // {
+  //   title: "Motion Graphics Designer",
+  //   location: "Ahmedabad",
+  //   positions: 5,
+  //   featured: false,
+  // },
+  // {
+  //   title: "Digital Marketing Executive",
+  //   location: "Ahmedabad",
+  //   positions: 1,
+  //   featured: false,
+  // },
+  // {
+  //   title: "AI/ML Engineer (Intern)",
+  //   location: "Ahmedabad",
+  //   positions: 4,
+  //   featured: false,
+  // },
+  // {
+  //   title: "Senior QA Engineer",
+  //   location: "Ahmedabad",
+  //   positions: 3,
+  //   featured: false,
+  // },
+  // {
+  //   title: "Sales Manager",
+  //   location: "Ahmedabad",
+  //   positions: 1,
+  //   featured: false,
+  // },
+]
 
 export default function OpenRoles() {
+  const [selectedJob, setSelectedJob] = useState(0) // Default to first job (UI/UX Designer)
+
+  const handleJobClick = (index) => {
+    setSelectedJob(index)
+  }
+
   return (
-    <section className="bg-white py-[40px] md:py-[60px] lg:py-[90px]">
-      <div className="flex flex-col lg:flex-row justify-between items-start  max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8">
-        {/* Left Section */}
-        <div className="mb-10 lg:mb-0 max-w-lg">
-          <h2 className="font-[Erstoria] text-[#C37A20] mb-[18px] md:mb-[40px] lg:mb-[25px]  lg:text-left">
-            Open Roles
-          </h2>
-          <p className="text-[13px] md:text-[18px] lg:text-[24px]  font-semibold text-[#000000] mb-2.5">
-            Got other Ideas?
+    <section className="open-roles py-[20px] md:py-[30px] lg:py-[50px]">
+      <div className="max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8">
+        {/* Header Section */}
+        <div className="text-center mb-[25px] md:mb-[30px] lg:mb-[40px]">
+          <h2 className="text-goldenBrown mb-[18px] md:mb-[20px] lg:mb-[25px]">Open Roles</h2>
+          <h3 className="text-cocoa mb-[10px]">Got other ideas?</h3>
+          <p>
+            Send Us your portfolio and CV to{" "}
+            <a href="mailto:hr@aisante.in" className="text-black underline hover:text-goldenBrown transition-colors">
+              hr@aisante.in
+            </a>
           </p>
-          <p className="font-normal  mb-1">
-            Send us your portfolio and CV to
-          </p>
-          <a
-            href="https://www.aisante.in"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline text-[#000000] transition-colors duration-200"
-          >
-            aisante.com
-          </a>
         </div>
 
-        {/* Right Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-2xl">
-          {roles.map((role, index) => (
-            <div
-              key={index}
-              className="role-item flex flex-col group cursor-pointer transition-transform"
-            >
-              <div className="flex items-center gap-2 text-gray-800 font-medium transition">
-                {role.title}
-                <Image
-                  src={icons.shareImgBlack}
-                  alt="Black_share_image"
-                  width={17} height={16}
-                  className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300"
-                />
+        {/* Job Listings Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-[14px]">
+          {jobListings.map((job, index) => (
+            <Link href="/career-details">
+              <div
+                key={index}
+                onClick={() => handleJobClick(index)}
+                className={`
+              rounded-[10px] px-[15px] py-[10px] md:px-[25px] md:py-[16px] flex items-center justify-between cursor-pointer
+              transition-all duration-200 hover:scale-[1.02] hover:shadow-lg
+              ${selectedJob === index ? "bg-black text-white" : "bg-iceBlue text-gray-800 hover:bg-ice"}
+            `}
+              >
+                <div className="flex-1 min-w-0">
+                  <h4 className="text-[14px] md:text-[18px] font-medium mb-[10px] truncate pr-2">{job.title}</h4>
+                  <p className={`text-xs sm:text-sm ${selectedJob === index ? "text-gray-300" : "text-gray-500"}`}>
+                    {job.location}
+                  </p>
+                </div>
+
+                <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
+                  <span
+                    className={`text-[14px] md:text-[18px] font-medium mb-[10px] ${selectedJob === index ? "text-white" : "text-gray-800"}`}
+                  >
+                    {job.positions} Position{job.positions > 1 ? "s" : ""}
+                  </span>
+                  <ArrowUpRight
+                    className={`w-5 h-5 sm:w-6 sm:h-6 ${selectedJob === index ? "text-white" : "text-gray-600"}`}
+                  />
+                </div>
               </div>
-              <span className="text-sm text-gray-500 mt-1">
-                {role.location}
-              </span>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
     </section>
-  );
+  )
 }
