@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "clsx": "^2.1.1",
     "framer-motion": "^12.7.4",
     "gsap": "^3.12.7",
     "isotope-layout": "^3.0.6",
@@ -25,7 +26,8 @@
     "react-bits": "^1.0.5",
     "react-dom": "^19.0.0",
     "react-slick": "^0.30.3",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
