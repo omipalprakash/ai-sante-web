@@ -5,7 +5,7 @@ import { images } from './constants';
 const Aboutus = () => {
   return (
     <section className={`${styles.content_wrapper} bg-[#F5F5F5] `} aria-label="About Us">
-      <div className="max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8">
+      <div className="container">
         <div className={styles.content_box}>
           {/* Left Images */}
           <div className={`${styles.image_column}  mb-16 md:mb-0`}>

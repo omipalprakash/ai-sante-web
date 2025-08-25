@@ -1,11 +1,7 @@
 import Tablist from '@/component/tablist';
 
 const index = () => {
-  return (
-    <div>
-      <Tablist />
-    </div>
-  );
+  return <Tablist />
 };
-
+d
 export default index;

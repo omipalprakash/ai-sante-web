@@ -64,7 +64,7 @@ export default function OpenRoles() {
 
   return (
     <section className="open-roles py-[20px] md:py-[30px] lg:py-[50px]">
-      <div className="max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8">
+      <div className="container">
         {/* Header Section */}
         <div className="text-center mb-[25px] md:mb-[30px] lg:mb-[40px]">
           <h2 className="text-goldenBrown mb-[18px] md:mb-[20px] lg:mb-[25px]">Open Roles</h2>

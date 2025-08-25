@@ -126,7 +126,7 @@ const Leaders = () => {
 
     return (
         <section className={styles.leadersSection}>
-            <div className="max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8">
+            <div className="container">
 
                 {/* Desktop and Tablet Slider Grid */}
                 <div className={styles.desktopOnly}>

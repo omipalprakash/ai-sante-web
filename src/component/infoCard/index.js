@@ -7,7 +7,7 @@ const InfoCard = ({ HeaderText = '', content1 = '', content2 = '' }) => {
     <>
       <Breadcrumbs />
       <section className='mt-6'>
-        <div className="max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8">
+        <div className="container">
           <div className="flex flex-col-reverse p-[20px_32px] border-[2px] border-[#8DC385] rounded-[50px] gap-[10px] md:grid md:grid-cols-2 md:p-[40px] lg:p-[60px_66px]">
             <div className='content'>
               <h1 className="page-title font-['Erstoria',_sans-serif]  text-[#07531f] mb-2.5 md:mb-[26px] lg:mb-[39px]">{HeaderText}</h1>

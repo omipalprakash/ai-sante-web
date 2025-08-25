@@ -32,7 +32,7 @@ export default function BackToTop() {
         w-12 h-12 rounded-full shadow-lg
         bg-white/90 hover:bg-white transition
         ring-1 ring-gray-200 hover:scale-105
-        focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
+        focus:outline-none 
       "
         >
             {/* simple chevron up icon (SVG) */}

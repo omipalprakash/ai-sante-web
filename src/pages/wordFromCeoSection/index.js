@@ -26,7 +26,7 @@ export default function WordsFromCEO() {
   return (
 
     <section className={styles.description}>
-      <div className='max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8'>
+      <div className='container'>
         <motion.div
           className={styles.description__content}
           initial={{ opacity: 0, y: 50 }}

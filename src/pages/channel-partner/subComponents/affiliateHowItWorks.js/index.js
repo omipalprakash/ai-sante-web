@@ -3,7 +3,7 @@ import { howItWorksSteps } from '@/lib/channel-partner';
 const HowItWorksSection = () => {
   return (
     <section className="bg-white py-12 px-4 md:px-8 lg:px-16">
-      <div className="mx-auto max-w-[1440px]">
+      <div className="container">
         <h2
           className="text-center mb-10 text-[#000000]"
           style={{

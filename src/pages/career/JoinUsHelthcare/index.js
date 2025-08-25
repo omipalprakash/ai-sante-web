@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function JoinUsHelthcare() {
   return (
     <section className="join mt-[20px] md:mt-[40px]">
-      <div className='max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8'>
+      <div className='container'>
         <div className="w-full bg-no-repeat bg-cover bg-center flex justify-center items-center h-[205px] md:h-[424px] lg:h-[648px] flex-col" style={{ backgroundImage: `url(${icons.JoinUsHelthcare})` }}>
           <div className="flex-1 flex items-center justify-center mx-auto w-full">
             <div className="text-center mt-0 md:mt-8">

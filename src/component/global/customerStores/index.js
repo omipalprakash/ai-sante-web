@@ -45,7 +45,7 @@ export default function CustomerStroresSection({ data = [] }) {
 
   return (
     <section className="w-full overflow-hidden py-[30px] md:py-[20px]  lg:py-[59px]">
-      <div className='max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8'>
+      <div className='container'>
         <div className="mb-[10px] md:mb-[32px] lg:mb-[60px] border-b border-black pb-2">
           <Header_text text={'Customer Stories'} />
         </div>

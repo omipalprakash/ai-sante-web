@@ -9,7 +9,7 @@ const AudienceSelector = () => {
 
   return (
     <section className="bg-gray-50 py-12 px-4 ] md:px-8 lg:px-16">
-      <div className="bg-[#EEF5F8] p-6 sm:p-10  rounded-2xl max-w-[1440px] mx-auto  lg:my-20">
+      <div className="bg-[#EEF5F8] p-6 sm:p-10  rounded-2xl container  lg:my-20">
         <div className="flex flex-col lg:flex-row gap-10">
           {/* Left: Audience Options */}
           <div className="flex flex-col gap-4 lg:w-1/3">

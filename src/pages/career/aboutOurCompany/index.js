@@ -1,7 +1,7 @@
 export default function AboutOurCompany() {
   return (
     <section className="py-[40px] md:py-[73px] lg:py-[90px]">
-      <div className="max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8">
+      <div className="container">
         <h2 className="text-center text-goldenBrown mb-[20px] md:mb-[24px] lg:mb-[32px]">
           A Little More to Know About Us Before you Apply
         </h2>

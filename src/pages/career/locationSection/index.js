@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 export default function LocationSection() {
   return (
     <div className="bg-[#ffffff] py-[40px] md:py-[60px] lg:py-[90px]">
-      <div className="max-w-[1404px] mx-auto px-4 sm:px-6 md:px-8 flex flex-col-reverse lg:flex-row items-center lg:items-start  gap-8 md:gap-[100px] lg:gap-[195px]">
+      <div className="container flex flex-col-reverse lg:flex-row items-center lg:items-start  gap-8 md:gap-[100px] lg:gap-[195px]">
         {/* Left Section: Images */}
         <motion.div
           className="w-full lg:w-1/2 relative"

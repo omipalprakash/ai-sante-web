@@ -73,7 +73,7 @@ const JoinFormSection = () => {
 
   return (
     <section className="w-full bg-white py-6 px-4 md:px-6 lg:px-12 flex flex-col lg:flex-row items-center justify-center">
-      <div className="w-full max-w-[1440px] flex flex-col-reverse lg:flex-row items-center justify-between gap-6 md:gap-10">
+      <div className="w-full container flex flex-col-reverse lg:flex-row items-center justify-between gap-6 md:gap-10">
         {/* Left: Form Section */}
         <div className="w-full lg:w-1/2 max-w-lg">
           {/* Step 1 */}
@@ -107,7 +107,7 @@ const JoinFormSection = () => {
                       placeholder="Add First Name"
                       value={formData.firstName}
                       onChange={handleChange}
-                      className={`w-full border-b border-gray-300 focus:outline-none focus:border-black ${styles.field}`}
+                      className={`w-full  ${styles.field}`}
                     />
                     {errors.firstName && (
                       <span className="text-red-500 text-xs">{errors.firstName}</span>
@@ -129,7 +129,7 @@ const JoinFormSection = () => {
                       placeholder="Add Last Name"
                       value={formData.lastName}
                       onChange={handleChange}
-                      className={`w-full border-b border-gray-300 focus:outline-none focus:border-black  ${styles.field}`}
+                      className={`w-full   ${styles.field}`}
                     />
                     {errors.lastName && (
                       <span className="text-red-500 text-xs">{errors.lastName}</span>
@@ -151,7 +151,7 @@ const JoinFormSection = () => {
                       placeholder="Add Email"
                       value={formData.email}
                       onChange={handleChange}
-                      className={`w-full border-b border-gray-300 focus:outline-none focus:border-black ${styles.field}`}
+                      className={`w-full ${styles.field}`}
                     />
                     {errors.email && (
                       <span className="text-red-500 text-xs">{errors.email}</span>
@@ -173,7 +173,7 @@ const JoinFormSection = () => {
                       placeholder="Add Phone Number"
                       value={formData.phone}
                       onChange={handleChange}
-                      className={`w-full border-b border-gray-300 focus:outline-none focus:border-black  ${styles.field}`}
+                      className={`w-full  ${styles.field}`}
                     />
                     {errors.phone && (
                       <span className="text-red-500 text-xs">{errors.phone}</span>
